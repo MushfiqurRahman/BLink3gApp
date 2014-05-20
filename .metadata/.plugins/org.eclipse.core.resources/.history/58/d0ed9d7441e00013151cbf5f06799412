@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.gexperience.LoginActivity$PlaceholderFragment" >
+
+        <RelativeLayout
+        android:id="@+id/topMain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         >  
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dip"
+            android:text="Login"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+             />
+    </RelativeLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/LinearBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="vertical" >        
+       
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_login_form"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/LinearBottom"
+        android:layout_below="@id/topMain"        
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#E7F3FF"
+        android:paddingLeft="15dp"
+    	android:paddingRight="15dp" >
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"                                
+                android:text="@string/select_eng"
+                android:textStyle="bold" 
+                android:layout_marginBottom="2dp"
+                />
+        </LinearLayout>
+        
+        
+
+            <Spinner
+                android:id="@+id/spnEngineer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"                
+                android:layout_marginBottom="15dp"     
+                android:textSize="30sp"
+                android:padding="5dp"         
+                android:spinnerMode="dropdown"
+                android:drawSelectorOnTop = "true"   
+                android:background="@drawable/spinner"             
+                 />
+            
+            
+            <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"                
+                android:text="@string/select_cmp"
+                android:layout_marginBottom="2dp"
+                android:textStyle="bold" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spnCompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginBottom="15dp"                
+                android:textSize="30sp"
+                android:padding="5dp"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/spinner"/>
+            
+            
+            <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="left">
+	            <TextView
+	                android:id="@+id/textView3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/password"
+	                android:textStyle="bold"
+	                android:layout_marginBottom="2dp"
+	                 />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"                
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textSize="25sp"                
+                android:background="@drawable/rounded_edittext" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"                
+                android:layout_marginBottom="15dp"
+                android:text="@string/login"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+    </LinearLayout> 
+    
+
+</RelativeLayout>
+
