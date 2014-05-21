@@ -21,4 +21,6 @@
     <string name="sbcr_mobile_brand">Mobile Brand</string>
     <string name="submit">Submit</string>
     <string name="reset">Reset</string>
+    <string name="action_db_sync">Sync Database</string>
+    <string name="logout">Logout</string>
 </resources>

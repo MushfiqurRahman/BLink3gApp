@@ -1,0 +1,98 @@
+package com.example.gexperience.database;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class ExperienceSQLiteOpenHelper extends SQLiteOpenHelper {
+	
+	public ExperienceSQLiteOpenHelper(Context context, String name,
+			CursorFactory factory, int version) {
+		super(context, name, factory, version);
+		// TODO Auto-generated constructor stub
+	}
+
+	private static final String TAG = "DataBaseUtil";
+	private static final String DATABASE_NAME = "3g_experience";
+	private static final int DATABASE_VERSION = 1;
+	
+	public static final String TABLE_AREAS = "areas";	
+	public static final String TABLE_LOCATIONS = "location";
+	public static final String TABLE_PROMOTERS = "promoters";
+	public static final String TABLE_OCCUPATIONS = "occupations";
+	public static final String TABLE_PACKAGES = "packages";
+	public static final String TABLE_MOBILE_BRANDS = "mobile_brands";
+		
+	
+	/****** Following are column names *********/
+	private static final String AREA_ID = "area_id";
+	private static final String AREA_TITLE = "title";
+	
+	private static final String LOCATION_ID = "location_id";
+	private static final String LOCATION_AREA_ID = "area_id";
+	private static final String LOCATION_TITLE = "title";
+	
+	private static final String PROMOTER_ID = "promoter_id";
+	private static final String PROMOTER_TEAM_ID = "team_id";
+	private static final String PROMOTER_TEAM_NAME = "team_name";
+	private static final String PROMOTER_PROMOTER_NAME = "promoter_name";
+	
+	private static final String OCCUPATION_ID = "occupation_id";
+	private static final String OCCUPATION_TITLE = "title";
+	
+	private static final String PACKAGE_ID = "package_id";
+	private static final String PACKAGE_TITLE = "title";
+	
+	private static final String MOBILE_BRAND_ID = "mobile_brand_id";
+	private static final String MOBILE_BRAND_ID_TITLE = "title";
+	
+	
+	
+	
+//	private static final String SETTINGS_ID = "id";
+//	private static final String SETTINGS_VARIABLE_NAME = "variable_name";
+//	private static final String SETTINGS_VARIABLE_VALUE = "variable_value";	
+//	
+//	private static final String CREATE_TABLE_SETTINGS = "create table "+ TABLE_SETTINGS +
+//			" ( "+ SETTINGS_ID+" integer, "+ SETTINGS_VARIABLE_NAME+" text not null,"+
+//			SETTINGS_VARIABLE_VALUE+ " text not null);";
+	
+	private static final String CREATE_TABLE_AREAS = "create table "+ TABLE_AREAS +
+			" ("+AREA_ID+" INTEGER PRIMARY KEY, "+AREA_TITLE+" text not null);";
+	
+	private static final String CREATE_TABLE_LOCATIONS = "create table "+ TABLE_LOCATIONS +
+			" ("+LOCATION_ID+" INTEGER PRIMARY KEY, "+LOCATION_AREA_ID+"" +
+					" INTEGER NOT NULL, "+LOCATION_TITLE+" text not null);";
+	
+	private static final String CREATE_TABLE_PROMOTERS = "create table "+ TABLE_PROMOTERS +
+			" ("+PROMOTER_ID+" INTEGER PRIMARY KEY, "+PROMOTER_TEAM_ID+
+			" INTEGER NOT NULL, "+PROMOTER_TEAM_NAME+" TEXT NOT NULL,"+
+			PROMOTER_PROMOTER_NAME+" text not null);";
+	
+	private static final String CREATE_TABLE_OCCUPATIONS = "create table "+ TABLE_OCCUPATIONS +
+			" ("+OCCUPATION_ID+" INTEGER PRIMARY KEY, "+OCCUPATION_TITLE+" text not null);";
+	
+	private static final String CREATE_TABLE_PACKAGES = "create table "+ TABLE_PACKAGES +
+			" ("+LOCATION_ID+" INTEGER PRIMARY KEY, "+LOCATION_AREA_ID+"" +
+					" INTEGER NOT NULL, "+LOCATION_TITLE+" text not null);";
+	
+	private static final String CREATE_TABLE_LOCATIONS = "create table "+ TABLE_LOCATIONS +
+			" ("+LOCATION_ID+" INTEGER PRIMARY KEY, "+LOCATION_AREA_ID+"" +
+					" INTEGER NOT NULL, "+LOCATION_TITLE+" text not null);";
+	
+
+
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

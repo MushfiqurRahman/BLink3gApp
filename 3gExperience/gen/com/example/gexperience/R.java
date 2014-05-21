@@ -1157,6 +1157,7 @@ containing a value of this type.
         public static final int spnPackageTypes=0x7f050055;
         public static final int submit_area=0x7f050039;
         public static final int survey_container=0x7f05005a;
+        public static final int sync_db_with_server=0x7f05005c;
         public static final int tabMode=0x7f050002;
         public static final int textView1=0x7f050041;
         public static final int textView2=0x7f050043;
@@ -1279,6 +1280,7 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
+        public static final int action_db_sync=0x7f0a0021;
         public static final int action_settings=0x7f0a000f;
         public static final int app_name=0x7f0a000d;
         public static final int area=0x7f0a0013;
@@ -1286,6 +1288,7 @@ containing a value of this type.
         public static final int hello_world=0x7f0a000e;
         public static final int location=0x7f0a0014;
         public static final int login=0x7f0a0015;
+        public static final int logout=0x7f0a0022;
         public static final int reset=0x7f0a0020;
         public static final int sbcr_age=0x7f0a0019;
         public static final int sbcr_gender=0x7f0a001a;

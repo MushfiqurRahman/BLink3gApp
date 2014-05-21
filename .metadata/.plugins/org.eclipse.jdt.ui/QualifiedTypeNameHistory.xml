@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="com.example.gexperience.SplashScreen"/>
+<fullyQualifiedTypeName name="com.example.gexperience.SurveyActivity"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="com.example.gexperience.LoginActivity"/>
+<fullyQualifiedTypeName name="com.example.gexperience.R.id"/>
+</qualifiedTypeNameHistroy>

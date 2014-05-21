@@ -312,6 +312,7 @@ int id spnOccupation 0x7f05004a
 int id spnPackageTypes 0x7f050055
 int id submit_area 0x7f050039
 int id survey_container 0x7f05005a
+int id sync_db_with_server 0x7f05005c
 int id tabMode 0x7f050002
 int id textView1 0x7f050041
 int id textView2 0x7f050043
@@ -377,6 +378,7 @@ int string abc_searchview_description_submit 0x7f0a0007
 int string abc_searchview_description_voice 0x7f0a0008
 int string abc_shareactionprovider_share_with 0x7f0a000c
 int string abc_shareactionprovider_share_with_application 0x7f0a000b
+int string action_db_sync 0x7f0a0021
 int string action_settings 0x7f0a000f
 int string app_name 0x7f0a000d
 int string area 0x7f0a0013
@@ -384,6 +386,7 @@ int string bp_code 0x7f0a0012
 int string hello_world 0x7f0a000e
 int string location 0x7f0a0014
 int string login 0x7f0a0015
+int string logout 0x7f0a0022
 int string reset 0x7f0a0020
 int string sbcr_age 0x7f0a0019
 int string sbcr_gender 0x7f0a001a

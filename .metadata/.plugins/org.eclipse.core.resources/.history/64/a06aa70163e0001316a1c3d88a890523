@@ -1,0 +1,91 @@
+package com.example.gexperience.database;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class ExperienceSQLiteOpenHelper extends SQLiteOpenHelper {
+	
+	public ExperienceSQLiteOpenHelper(Context context, String name,
+			CursorFactory factory, int version) {
+		super(context, name, factory, version);
+		// TODO Auto-generated constructor stub
+	}
+
+	private static final String TAG = "DataBaseUtil";
+	private static final String DATABASE_NAME = "3g_experience";
+	private static final int DATABASE_VERSION = 1;
+	
+	public static final String TABLE_AREAS = "areas";	
+	public static final String TABLE_LOCATIONS = "location";
+	public static final String TABLE_PROMOTERS = "promoters";
+	public static final String TABLE_OCCUPATIONS = "occupations";
+	public static final String TABLE_PACKAGES = "packages";
+	public static final String TABLE_MOBILE_BRANDS = "mobile_brands";
+		
+	
+	/****** Following are column names *********/
+	
+	private static final String AREA_ = "";
+	
+	private static final String SETTINGS_ID = "id";
+	private static final String SETTINGS_VARIABLE_NAME = "variable_name";
+	private static final String SETTINGS_VARIABLE_VALUE = "variable_value";	
+	
+	private static final String CREATE_TABLE_SETTINGS = "create table "+ TABLE_SETTINGS +
+			" ( "+ SETTINGS_ID+" integer, "+ SETTINGS_VARIABLE_NAME+" text not null,"+
+			SETTINGS_VARIABLE_VALUE+ " text not null);";
+	
+	private static final String CREATE_TABLE_OUTLETS = "create table "+ TABLE_OUTLETS +
+			" (id INTEGER PRIMARY KEY, dms_code text not null, region text not null, territory text not null,"+
+			"town text not null, name text not null, address text null, outlet_type text not null,"+
+			"class text null, is_finished integer default 0);";
+	
+	private static final String CREATE_TABLE_SURVEYS = "create table "+ TABLE_SURVEYS +
+			" (id INTEGER PRIMARY KEY, outlet_id integer null, dms_code text not null, is_failure integer default 0,"+
+			" failure_cause text null, must_sku_data text null,"+
+			"fixed_display_data text null, new_products_data text null, trade_promotion_data "+
+			"text null, pop_items_data text null, hot_spot_data text null, additional_info "+
+			"text null, lattitude real null, longitude real null, first_image "+
+			"text null, second_image null, date_time text null, is_finished integer default 0);";
+	
+	//is_active_sku means for which sku spinner will be shown, is_end_sku for which bottom border will be drawn	
+	private static final String CREATE_TABLE_SKUS = "create table "+ TABLE_SKUS +
+			"(id integer not null, sku_title text not null, sku_code text not null,"+
+			"outlet_type text not null, front_end_menu text not null, task_id integer default 0,"+
+			" subset_id integer default -1, is_active_sku integer default -1,"+
+			"is_end_sku integer default -1);";
+	
+	private static final String CREATE_TABLE_HOTSPOTS = "create table "+ TABLE_HOT_SPOTS +
+			" (id integer PRIMARY KEY, head text not null, descr text not null, outlet_type"+
+			" text not null, first_compliance text not null, second_compliance text null," +
+			"hotspot_id integer not null);";
+	
+	private static final String CREATE_TABLE_TRADE_PROMOTIONS = "create table "+ TABLE_TRADE_PROMOTION +
+			" (id integer PRIMARY KEY, program_name text not null, promotion_id integer not null);";
+	
+	private static final String CREATE_TABLE_POPS = "create table "+ TABLE_POPS +" (id "+
+	"integer PRIMARY KEY, head text not null, descr text not null, outlet_type text not null," +
+	"pop_id integer not null);";
+	
+
+	
+	private static final String CREATE_TABLE_TASKS = "CREATE TABLE "+TABLE_TASKS+
+			"(id integer PRIMARY KEY, part_id integer not null, task_id integer not null,"+
+			" task_join_type text not null, task_title text not null,"+
+			"front_end_menu text not null, outlet_type text not null);";
+
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

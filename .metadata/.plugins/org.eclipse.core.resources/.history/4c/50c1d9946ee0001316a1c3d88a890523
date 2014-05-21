@@ -1,0 +1,149 @@
+package com.example.gexperience;
+
+
+import com.example.gexperience.database.DatabaseUtil;
+import com.shaiun.surveysystem.HomeActivity;
+import com.shaiun.surveysystem.HomeActivity.GetQuestioneriesDataTask;
+import com.shaiun.surveysystem.database.DataBaseUtil;
+import com.shaiun.surveysystem.util.SurveySystemApp;
+
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBar;
+import android.support.v4.app.Fragment;
+import android.app.AlertDialog;
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+import android.os.Build;
+
+public class LoginActivity extends ActionBarActivity {
+	
+	Button btnLogin;
+	private DatabaseUtil dbUtil;
+	private ProgressDialog dialog;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_login);
+		
+		dbUtil = new DatabaseUtil();
+		dbUtil.open();
+		//dbUtil.saveOutlatesForSurvey(SurveySystemApp.getInstance().getOutletInfoList());
+		
+//		if( !dbUtil.isDbSynchronizedByServerData() ){
+//			new GetQuestioneriesDataTask().execute();
+//		}
+		dbUtil.close();
+
+//		if (savedInstanceState == null) {
+//			getSupportFragmentManager().beginTransaction()
+//					.add(R.id.login_container, new PlaceholderFragment()).commit();
+//		}
+		
+		btnLogin = (Button)findViewById(R.id.btnLogin);
+
+		btnLogin.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+		        //Now going to survey activity
+		        Intent surveyIntent = new Intent(LoginActivity.this, SurveyActivity.class);
+		        startActivity(surveyIntent);
+		        finish();
+			}
+		});
+	}
+	
+//	public void go_to_survey(){
+//        //Now going to survey activity
+//        Intent surveyIntent = new Intent(this, SurveyActivity.class);
+//        startActivity(surveyIntent);
+//	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.login, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}else if( id==R.id.sync_db_with_server){
+			AlertDialog alertDialog = new AlertDialog.Builder(LoginActivity.this).create();
+
+	        alertDialog.setTitle("Confirmation");
+	        alertDialog.setMessage("Are you sure you want to Sync database? This will erase all the local data.");
+	        alertDialog.setCancelable(true);
+	        
+	        alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Yes", new DialogInterface.OnClickListener() {							
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					dialog = ProgressDialog.show(LoginActivity.this, "Synchronizing", "Please wait...", true, true, new DialogInterface.OnCancelListener() {
+						
+						@Override
+						public void onCancel(DialogInterface dialog) {
+							
+						}
+					});
+					dbUtil.open();
+					dbUtil.deleteTableContentsForDbSync();
+					
+					dialog.dismiss();
+//					
+//					if( !dbUtil.isDbSynchronizedByServerData() ){
+//						new GetQuestioneriesDataTask().execute();
+//						dbUtil.close();
+//					}
+//					dbUtil.close();
+				}
+			});
+	        alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "No", new DialogInterface.OnClickListener() {							
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					
+				}
+			});
+	        alertDialog.show();
+	        
+	        return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+
+	/**
+	 * A placeholder fragment containing a simple view.
+	 */
+	public static class PlaceholderFragment extends Fragment {
+
+		public PlaceholderFragment() {
+		}
+
+		@Override
+		public View onCreateView(LayoutInflater inflater, ViewGroup container,
+				Bundle savedInstanceState) {
+			View rootView = inflater.inflate(R.layout.fragment_login_bak,
+					container, false);
+			return rootView;
+		}
+	}
+
+}

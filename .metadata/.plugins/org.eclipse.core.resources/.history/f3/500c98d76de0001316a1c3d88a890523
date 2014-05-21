@@ -1,0 +1,52 @@
+package com.example.gexperience.database;
+
+import com.shaiun.surveysystem.database.ExperienceSQLiteOpenHelper;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+
+
+public class DatabaseUtil {
+	
+	SQLiteOpenHelper dbHelper;
+	SQLiteDatabase database;
+	Context context;
+
+	public void DataBaseUtil(Context ctx) {
+		dbHelper = new ExperienceSQLiteOpenHelper(ctx);
+		context = ctx;
+	}
+	
+	public void open(){
+		database = dbHelper.getWritableDatabase();
+	}
+
+	public void close() {
+		dbHelper.close();
+	}
+	
+	/**
+	 * @desc Deletes all table contents for database sync with backend. This is usually needed at the
+	 * beginning of a month.
+	 */
+	public void deleteTableContentsForDbSync(){
+		database.execSQL("DELETE FROM " + ExperienceSQLiteOpenHelper.TABLE_AREAS);
+		database.execSQL("VACUUM");
+		database.execSQL("DELETE FROM " + ExperienceSQLiteOpenHelper.TABLE_LOCATIONS);
+		database.execSQL("VACUUM");
+		database.execSQL("DELETE FROM " + ExperienceSQLiteOpenHelper.TABLE_PROMOTERS);
+		database.execSQL("VACUUM");
+		database.execSQL("DELETE FROM " + ExperienceSQLiteOpenHelper.TABLE_SKUS);
+		database.execSQL("VACUUM");
+		database.execSQL("DELETE FROM " + ExperienceSQLiteOpenHelper.TABLE_SURVEYS);
+		database.execSQL("VACUUM");
+		database.execSQL("DELETE FROM " + ExperienceSQLiteOpenHelper.TABLE_TASKS);
+		database.execSQL("VACUUM");
+		database.execSQL("DELETE FROM " + ExperienceSQLiteOpenHelper.TABLE_TRADE_PROMOTION);
+		database.execSQL("VACUUM");
+	}
+
+
+}
