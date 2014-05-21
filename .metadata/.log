@@ -5078,3 +5078,1669 @@ Java Model Exception: Java Model Status [Timed out while retrieving the attached
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
 !SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 11:40:58.245
 !MESSAGE Timed out while retrieving the attached javadoc for ViewGroup [in ViewGroup.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:55:50.732
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:55:50.732
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:55:54.391
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:55:54.391
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:55:54.899
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:55:54.899
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:55:56.113
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:55:56.113
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:55:56.985
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:55:56.985
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:55:57.008
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:55:57.009
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:55:58.588
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:55:58.589
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:55:59.278
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:55:59.279
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:55:59.325
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:55:59.326
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:00.163
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:00.164
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:00.241
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:00.241
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:00.464
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:00.465
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:00.611
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:00.612
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:00.931
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:00.932
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:01.054
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:01.054
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:01.343
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:01.344
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:01.480
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:01.481
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:01.503
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:01.504
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:01.559
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:01.563
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:02.435
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:02.435
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:02.853
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:02.853
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:03.024
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:03.024
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:03.242
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:03.242
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:04.981
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:04.981
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:05.541
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:05.542
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:05.714
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:05.715
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:05.724
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:05.725
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:05.925
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:05.925
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:06.483
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:06.483
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:06.507
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:06.508
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:06.539
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:06.539
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:08.374
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:08.375
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:09.915
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:09.915
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:10.886
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:10.886
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:11.125
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:11.126
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:12.161
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:12.162
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:12.378
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:12.379
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:13.006
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:13.006
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:13.052
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:13.056
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:13.730
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:13.730
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:13.883
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:13.884
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:15.155
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:15.156
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:15.227
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:15.227
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:15.382
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:15.382
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:15.460
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:15.460
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:15.636
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:15.636
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:15.996
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:15.996
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:16.001
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:16.002
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:16.535
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:16.535
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:16.617
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:16.617
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:17.237
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:17.237
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:17.609
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:17.609
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:17.806
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:17.807
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:18.076
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:18.077
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:18.223
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:18.224
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:18.384
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:18.384
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:18.565
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:18.566
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:19.313
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:19.313
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:20.061
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:20.061
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:21.399
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:21.400
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:21.565
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:21.566
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:22.351
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:22.352
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:22.439
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:22.440
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:22.981
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:22.981
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:23.109
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:23.110
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:23.588
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:23.589
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:24.201
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:24.201
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:24.946
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:24.947
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:25.709
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:25.710
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:26.743
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:26.743
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:27.059
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:27.060
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:27.559
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:27.559
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:28.059
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:28.060
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:28.353
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:28.354
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:29.064
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:29.064
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:29.916
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:29.916
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:30.400
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:30.400
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:30.737
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:30.738
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:31.296
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:31.296
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:32.924
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:32.924
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:33.040
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:33.041
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:35.263
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:35.263
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:35.731
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:35.732
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:36.781
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:36.781
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:36.877
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:36.877
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:42.981
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:42.981
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:45.736
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:45.736
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:46.201
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:46.201
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:47.501
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:47.501
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:53.040
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:53.041
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:56:59.745
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:56:59.745
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:57:01.911
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:57:01.911
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:57:10.090
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:57:10.090
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:57:11.890
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:57:11.890
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:57:20.587
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:57:20.587
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:57:23.826
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:57:23.826
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:57:27.285
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:57:27.285
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2014-05-21 12:58:33.788
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2014-05-21 12:58:33.788
+!MESSAGE Timed out while retrieving the attached javadoc for View [in View.class [in android.view [in E:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar]]] 

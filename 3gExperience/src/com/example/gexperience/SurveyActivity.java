@@ -4,7 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import org.apache.http.HttpEntity;
@@ -42,6 +44,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.os.Build;
 
@@ -77,11 +81,8 @@ public class SurveyActivity extends ActionBarActivity {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
 						if( validate_data() ){
-							if( send_data() ){
-								show_alert_dialog("Success", "Experience has been saved successfully");
-							}else{
-								show_alert_dialog("Success", "Save failed! Please try again");
-							}
+							//uploading data
+							new SurveyUploader().execute();
 						}else{
 							show_alert_dialog("Validation Error", "Please fill the form properly");
 						}
@@ -237,19 +238,6 @@ public class SurveyActivity extends ActionBarActivity {
         alertDialog.show();
 	}
 	
-	public boolean send_data(){
-		new SurveyUploader().execute();
-		try {
-			if(jDataObj.getBoolean("success") ){
-				return true;
-			}
-		} catch (JSONException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return false;
-	}
-	
 	private class SurveyUploader extends AsyncTask<Void, Void, String> {
 
 		@Override
@@ -263,26 +251,51 @@ public class SurveyActivity extends ActionBarActivity {
 			
 			//making it empty otherwise it may cause problem in onPostExecute method
 			serverResponse = "";
+			
+			int occupation_id, package_id, mobile_brand_id;
+			dbUtil = new DatabaseUtil(SurveyActivity.this);
+			dbUtil.open();
+			
+			occupation_id = dbUtil.getId(ExperienceSQLiteOpenHelper.TABLE_OCCUPATIONS,
+					((Spinner)findViewById(R.id.spnOccupation)).getSelectedItem().toString());
+			
+			package_id = dbUtil.getId(ExperienceSQLiteOpenHelper.TABLE_PACKAGES,
+					((Spinner)findViewById(R.id.spnPackageTypes)).getSelectedItem().toString());
+			
+			mobile_brand_id = dbUtil.getId(ExperienceSQLiteOpenHelper.TABLE_MOBILE_BRANDS,
+					((Spinner)findViewById(R.id.spnMobileBrad)).getSelectedItem().toString());
+			
+			dbUtil.close();
 
 			try {
 				HttpClient httpclient = new DefaultHttpClient();
 				HttpPost httppost = new HttpPost(LoginActivity.BASE_URL+"/receive_survey_data");
 				MultipartEntity reqEntry = new MultipartEntity(HttpMultipartMode.BROWSER_COMPATIBLE);
+				
+				reqEntry.addPart("promoter_id", new StringBody("1"));
+				reqEntry.addPart("location_id", new StringBody("1"));
 							
 				reqEntry.addPart("name", new StringBody(((EditText)findViewById(R.id.edtName)).getText().toString().trim()));
 				reqEntry.addPart("age", new StringBody(((EditText)findViewById(R.id.edtAge)).getText().toString().trim()));
 				reqEntry.addPart("mobile", new StringBody(((EditText)findViewById(R.id.edtMobileNo)).getText().toString().trim()));
-//				reqEntry.addPart("", new StringBody());
-//				reqEntry.addPart("", new StringBody());
-//				reqEntry.addPart("", new StringBody());
-//				reqEntry.addPart("", new StringBody());
-//				reqEntry.addPart("", new StringBody());
-//				reqEntry.addPart("", new StringBody());
-//				reqEntry.addPart("", new StringBody());
-//				reqEntry.addPart("", new StringBody());
-//				reqEntry.addPart("", new StringBody());
-//				reqEntry.addPart("", new StringBody());
-//				reqEntry.addPart("", new StringBody());	
+				reqEntry.addPart("recharge_amount", new StringBody(((EditText)findViewById(R.id.edtRecharge)).getText().toString().trim()));
+				
+				reqEntry.addPart("occupation_id", new StringBody(Integer.toString(occupation_id)));
+				reqEntry.addPart("mobile_brand_id", new StringBody(Integer.toString(mobile_brand_id)));
+				reqEntry.addPart("package_id", new StringBody(Integer.toString(package_id)));
+				
+				if( is_three_g() ){
+					reqEntry.addPart("is_3g", new StringBody("1"));
+				}else{
+					reqEntry.addPart("is_3g", new StringBody("0"));
+				}
+				
+				if( is_female() ){
+					reqEntry.addPart("is_female", new StringBody("1"));
+				}else{
+					reqEntry.addPart("is_female", new StringBody("0"));
+				}
+				reqEntry.addPart("date_time", new StringBody(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(Calendar.getInstance().getTime())));				
 					
 				httppost.setEntity(reqEntry);
 
@@ -322,7 +335,8 @@ public class SurveyActivity extends ActionBarActivity {
 				jDataObj = new JSONObject(serverResponse);
 				
 				if( jDataObj.length()>0 && jDataObj.getBoolean("success")==true ){
-					
+					show_alert_dialog("Upload successful!", "Upload successful. Thank you.");
+					reset_form();
 				}else{
 					show_alert_dialog("Upload response!", "Upload failed! Please try again");						
 				}
@@ -330,5 +344,29 @@ public class SurveyActivity extends ActionBarActivity {
 				e.printStackTrace();
 			}
 		}
+	}
+	
+	public boolean is_three_g(){
+		RadioGroup rg = (RadioGroup)findViewById(R.id.rdo3g);
+		int id= rg.getCheckedRadioButtonId();
+		
+	    View radioButton = rg.findViewById(id);
+	    
+	    int radioId = rg.indexOfChild(radioButton);
+	    String is3g = ((RadioButton) rg.getChildAt(radioId)).getText().toString();
+	    if( is3g.equals("Yes") ) return true;
+	    return false;
+	}
+	
+	public boolean is_female(){
+		RadioGroup rg = (RadioGroup)findViewById(R.id.rdoGender);
+		int id= rg.getCheckedRadioButtonId();
+		
+	    View radioButton = rg.findViewById(id);
+	    
+	    int radioId = rg.indexOfChild(radioButton);
+	    String isFemale = ((RadioButton) rg.getChildAt(radioId)).getText().toString();
+	    if( isFemale.equals("Female") ) return true;
+	    return false;
 	}
 }

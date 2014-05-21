@@ -155,4 +155,34 @@ public class DatabaseUtil {
 		cursor.close();
 		return titles;
 	}	
+	
+	public int getId(String tblName, String titleValue){
+		String qry = "SELECT ";
+		
+		if(tblName.equals(ExperienceSQLiteOpenHelper.TABLE_OCCUPATIONS) ){
+				qry += ExperienceSQLiteOpenHelper.OCCUPATION_ID+
+				" FROM "+ExperienceSQLiteOpenHelper.TABLE_OCCUPATIONS+
+				" WHERE "+ExperienceSQLiteOpenHelper.OCCUPATION_TITLE+
+				"='"+titleValue+"'";
+		}else if(tblName.equals(ExperienceSQLiteOpenHelper.TABLE_PACKAGES)){
+				qry += ExperienceSQLiteOpenHelper.PACKAGE_ID+
+				" FROM "+ExperienceSQLiteOpenHelper.TABLE_PACKAGES+
+				" WHERE "+ExperienceSQLiteOpenHelper.PACKAGE_TITLE+
+				"='"+titleValue+"'";
+		}else if(tblName.equals(ExperienceSQLiteOpenHelper.TABLE_MOBILE_BRANDS)){
+				qry += ExperienceSQLiteOpenHelper.MOBILE_BRAND_ID+
+				" FROM "+ExperienceSQLiteOpenHelper.TABLE_MOBILE_BRANDS+
+				" WHERE "+ExperienceSQLiteOpenHelper.MOBILE_BRAND_TITLE+
+				"='"+titleValue+"'";
+		}
+		
+		Cursor cursor = database.rawQuery(qry, null);
+		
+		cursor.moveToFirst();
+		if(cursor.getCount()>0){
+			return cursor.getInt(0);
+		}		
+		cursor.close();
+		return 0;
+	}
 }
