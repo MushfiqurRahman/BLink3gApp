@@ -1,5 +1,10 @@
 package com.example.gexperience.database;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import com.example.gexperience.datamodel.Occupation;
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -123,4 +128,31 @@ public class DatabaseUtil {
 		}
 		return false;
 	}
+
+	public List<String> getSpinnerItems(String tblName){
+		List<String> titles = new ArrayList<String>();
+		String qry = "SELECT ";
+		
+		if(tblName.equals(ExperienceSQLiteOpenHelper.TABLE_OCCUPATIONS) ){
+				qry += ExperienceSQLiteOpenHelper.OCCUPATION_TITLE+
+				" FROM "+ExperienceSQLiteOpenHelper.TABLE_OCCUPATIONS;
+		}else if(tblName.equals(ExperienceSQLiteOpenHelper.TABLE_PACKAGES)){
+				qry += ExperienceSQLiteOpenHelper.PACKAGE_TITLE+
+				" FROM "+ExperienceSQLiteOpenHelper.TABLE_PACKAGES;
+		}else if(tblName.equals(ExperienceSQLiteOpenHelper.TABLE_MOBILE_BRANDS)){
+				qry += ExperienceSQLiteOpenHelper.MOBILE_BRAND_TITLE+
+				" FROM "+ExperienceSQLiteOpenHelper.TABLE_MOBILE_BRANDS;
+		}
+		
+		Cursor cursor = database.rawQuery(qry, null);
+		
+		cursor.moveToFirst();
+		if(cursor.getCount()>0){
+			do{
+				titles.add(cursor.getString(0));
+			}while(cursor.moveToNext());
+		}		
+		cursor.close();
+		return titles;
+	}	
 }

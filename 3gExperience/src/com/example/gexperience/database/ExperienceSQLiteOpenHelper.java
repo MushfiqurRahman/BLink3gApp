@@ -19,28 +19,28 @@ public class ExperienceSQLiteOpenHelper extends SQLiteOpenHelper {
 		
 	
 	/****** Following are column names *********/
-	private static final String AREA_ID = "area_id";
-	private static final String AREA_TITLE = "title";
+	public static final String AREA_ID = "area_id";
+	public static final String AREA_TITLE = "title";
 	
-	private static final String LOCATION_ID = "location_id";
-	private static final String LOCATION_AREA_ID = "area_id";
-	private static final String LOCATION_TEAM_ID = "team_id";
-	private static final String LOCATION_TITLE = "title";
+	public static final String LOCATION_ID = "location_id";
+	public static final String LOCATION_AREA_ID = "area_id";
+	public static final String LOCATION_TEAM_ID = "team_id";
+	public static final String LOCATION_TITLE = "title";
 	
-	private static final String PROMOTER_ID = "promoter_id";
-	private static final String PROMOTER_TEAM_ID = "team_id";
-	private static final String PROMOTER_TEAM_NAME = "team_name";
-	private static final String PROMOTER_PROMOTER_NAME = "promoter_name";
-	private static final String PROMOTER_CODE = "promoter_code";
+	public static final String PROMOTER_ID = "promoter_id";
+	public static final String PROMOTER_TEAM_ID = "team_id";
+	public static final String PROMOTER_TEAM_NAME = "team_name";
+	public static final String PROMOTER_PROMOTER_NAME = "promoter_name";
+	public static final String PROMOTER_CODE = "promoter_code";
 	
-	private static final String OCCUPATION_ID = "occupation_id";
-	private static final String OCCUPATION_TITLE = "title";
+	public static final String OCCUPATION_ID = "occupation_id";
+	public static final String OCCUPATION_TITLE = "title";
 	
-	private static final String PACKAGE_ID = "package_id";
-	private static final String PACKAGE_TITLE = "title";
+	public static final String PACKAGE_ID = "package_id";
+	public static final String PACKAGE_TITLE = "title";
 	
-	private static final String MOBILE_BRAND_ID = "mobile_brand_id";
-	private static final String MOBILE_BRAND_ID_TITLE = "title";	
+	public static final String MOBILE_BRAND_ID = "mobile_brand_id";
+	public static final String MOBILE_BRAND_TITLE = "title";	
 	
 	
 //	private static final String SETTINGS_ID = "id";
@@ -72,7 +72,7 @@ public class ExperienceSQLiteOpenHelper extends SQLiteOpenHelper {
 			" ("+PACKAGE_ID+" INTEGER PRIMARY KEY, "+PACKAGE_TITLE+" text not null);";
 	
 	private static final String CREATE_TABLE_MOBILE_BRANDS = "create table "+ TABLE_MOBILE_BRANDS +
-			" ("+MOBILE_BRAND_ID+" INTEGER PRIMARY KEY, "+MOBILE_BRAND_ID_TITLE+" text not null);";
+			" ("+MOBILE_BRAND_ID+" INTEGER PRIMARY KEY, "+MOBILE_BRAND_TITLE+" text not null);";
 	
 
 	//constructor
