@@ -1,9 +1,6 @@
 package com.example.gexperience.database;
 
-
-
-import com.shaiun.surveysystem.database.SurveySQLiteOpenHelper;
-
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -60,6 +57,70 @@ public class DatabaseUtil {
 		database.execSQL("DELETE FROM " + ExperienceSQLiteOpenHelper.TABLE_MOBILE_BRANDS);
 		database.execSQL("VACUUM");
 	}
-
-
+	
+	
+	
+	public boolean saveArea(int id, String title){
+		ContentValues cv = new ContentValues();
+		cv.put("area_id", id);
+		cv.put("title", title);
+		if( database.insert(ExperienceSQLiteOpenHelper.TABLE_AREAS, null, cv)>0 ){
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean saveLocation(int id, int areaId, int teamId, String title){
+		ContentValues cv = new ContentValues();
+		cv.put("location_id", id);
+		cv.put("area_id", areaId);
+		cv.put("team_id", teamId);
+		cv.put("title", title);
+		if( database.insert(ExperienceSQLiteOpenHelper.TABLE_LOCATIONS, null, cv)>0 ){
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean savePromoter(int id, int teamId, String teamName, String promoName){
+		ContentValues cv = new ContentValues();
+		cv.put("promoter_id", id);
+		cv.put("team_id", teamId);
+		cv.put("team_name", teamName);
+		cv.put("promoter_name", promoName);
+		if( database.insert(ExperienceSQLiteOpenHelper.TABLE_PROMOTERS, null, cv)>0 ){
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean saveOccupation(int id, String title){
+		ContentValues cv = new ContentValues();
+		cv.put("occupation_id", id);
+		cv.put("title", title);
+		if( database.insert(ExperienceSQLiteOpenHelper.TABLE_OCCUPATIONS, null, cv)>0 ){
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean savePackage(int id, String title){
+		ContentValues cv = new ContentValues();
+		cv.put("package_id", id);
+		cv.put("title", title);
+		if( database.insert(ExperienceSQLiteOpenHelper.TABLE_PACKAGES, null, cv)>0 ){
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean saveMobileBrand(int id, String title){
+		ContentValues cv = new ContentValues();
+		cv.put("mobile_brand_id", id);
+		cv.put("title", title);
+		if( database.insert(ExperienceSQLiteOpenHelper.TABLE_MOBILE_BRANDS, null, cv)>0 ){
+			return true;
+		}
+		return false;
+	}
 }

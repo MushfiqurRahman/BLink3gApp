@@ -1,0 +1,397 @@
+package com.example.gexperience;
+
+
+import java.io.ByteArrayOutputStream;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import com.example.gexperience.database.DatabaseUtil;
+
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBar;
+import android.support.v4.app.Fragment;
+import android.app.AlertDialog;
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+import android.os.Build;
+
+
+
+public class LoginActivity extends ActionBarActivity {
+	
+	private String BASE_URL = "http://localhost/2014/banglalink3g/api";
+//	private String BASE_URL = "http://localhost/2014/banglalink3g/api";
+	
+	Button btnLogin;
+	private DatabaseUtil dbUtil;
+	private ProgressDialog dialog;
+	private String allDataFromServer;
+	JSONObject objJsonQuestionaries;
+	
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_login);
+		
+		dbUtil = new DatabaseUtil(LoginActivity.this);
+		dbUtil.open();
+		
+		
+		if( !dbUtil.isDbSynchronizedByServerData() ){
+			new FetchAllDataFromServer().execute();
+		}
+		dbUtil.close();
+
+//		if (savedInstanceState == null) {
+//			getSupportFragmentManager().beginTransaction()
+//					.add(R.id.login_container, new PlaceholderFragment()).commit();
+//		}
+		
+		btnLogin = (Button)findViewById(R.id.btnLogin);
+
+		btnLogin.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+		        //Now going to survey activity
+		        Intent surveyIntent = new Intent(LoginActivity.this, SurveyActivity.class);
+		        startActivity(surveyIntent);
+		        finish();
+			}
+		});
+	}
+	
+//	public void go_to_survey(){
+//        //Now going to survey activity
+//        Intent surveyIntent = new Intent(this, SurveyActivity.class);
+//        startActivity(surveyIntent);
+//	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.login, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}else if( id==R.id.sync_db_with_server){
+			AlertDialog alertDialog = new AlertDialog.Builder(LoginActivity.this).create();
+
+	        alertDialog.setTitle("Confirmation");
+	        alertDialog.setMessage("Are you sure you want to Sync database? This will erase all the local data.");
+	        alertDialog.setCancelable(true);
+	        
+	        alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Yes", new DialogInterface.OnClickListener() {							
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					dialog = ProgressDialog.show(LoginActivity.this, "Synchronizing", "Please wait...", true, true, new DialogInterface.OnCancelListener() {
+						
+						@Override
+						public void onCancel(DialogInterface dialog) {
+							
+						}
+					});
+					dbUtil.open();
+					dbUtil.deleteTableContentsForDbSync();
+					
+					dialog.dismiss();
+//					
+//					if( !dbUtil.isDbSynchronizedByServerData() ){
+//						new GetQuestioneriesDataTask().execute();
+//						dbUtil.close();
+//					}
+//					dbUtil.close();
+				}
+			});
+	        alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "No", new DialogInterface.OnClickListener() {							
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					
+				}
+			});
+	        alertDialog.show();
+	        
+	        return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+
+	/**
+	 * A placeholder fragment containing a simple view.
+	 */
+//	public static class PlaceholderFragment extends Fragment {
+//
+//		public PlaceholderFragment() {
+//		}
+//
+//		@Override
+//		public View onCreateView(LayoutInflater inflater, ViewGroup container,
+//				Bundle savedInstanceState) {
+//			View rootView = inflater.inflate(R.layout.fragment_login_bak,
+//					container, false);
+//			return rootView;
+//		}
+//	}
+	
+	public class FetchAllDataFromServer extends AsyncTask<Void, Void, Void> {
+		
+		@Override
+		protected void onPreExecute() {
+			// TODO Auto-generated method stub
+			dialog = ProgressDialog.show(LoginActivity.this, "Data Fetching", "Data Fetching from server...", true, true);
+		}
+		@Override
+		protected Void doInBackground(Void... arg0) {
+			try {
+				List<NameValuePair> postData = new ArrayList<NameValuePair>(1);
+				//postData.add((NameValuePair) new BasicNameValuePair("device_id", "TempDeviceId"));
+				// = CommunicationLayer.getQuestioneriesData();
+				 //allDataFromServer = WebServerOperation.sendHTTPPostRequestToServer(BASE_URL+"/api_login", postData, true);
+				//WebServerOperation.sendHTT
+				
+				DefaultHttpClient client = new DefaultHttpClient();
+		        HttpGet httpGet = new HttpGet(BASE_URL+"/fetch_all_data");
+		        
+				HttpResponse response = client.execute(httpGet);		          
+				HttpEntity entity = response.getEntity();
+		        ByteArrayOutputStream out = new ByteArrayOutputStream();
+		        entity.writeTo(out);
+		        out.close();
+		        allDataFromServer = out.toString();
+		        Log.i("SERVER RESPONSEEEE", allDataFromServer);
+		        
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			return null;
+		}
+
+		@Override
+		protected void onPostExecute(Void result) {
+			super.onPostExecute(result);
+			if (dialog.isShowing()) {
+				dialog.dismiss();
+				
+			}
+			if( allDataFromServer.length()>0 ){
+				try {
+					saveAllDataInDb(allDataFromServer);
+//					Log.i("Questionaries...",questionariesData);
+				} catch (JSONException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+	
+	private void show_alert_dialog(String title, String msg){
+		AlertDialog alertDialog = new AlertDialog.Builder(LoginActivity.this).create();
+    	alertDialog.setTitle(title);
+        alertDialog.setMessage(msg);
+        alertDialog.setCancelable(true);
+        
+        alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK", new DialogInterface.OnClickListener() {							
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+			}
+		});
+        alertDialog.show();
+	}
+	
+/************************* All the Questionaries from server has been inserted here ************************/
+	
+	public void saveAllDataInDb(String questionaries) throws JSONException{
+		boolean success = true;
+		//that json object will be used in all the insertion method of this class
+		objJsonQuestionaries = new JSONObject(questionaries);
+				
+		dbUtil.open();		
+		if( !insertAreas() ){
+			success = false;
+		}
+		if( !insertLocations() ){
+			success = false;
+		}
+		if( !insertPromoters() ){
+			success = false;
+		}
+		if( !insertOccupations() ){
+			success = false;
+		}
+		if( !insertPackages() ){
+			success = false;
+		}
+		if( !insertMobileBrands() ){
+			success = false;
+		}
+		dbUtil.close();
+		
+		if(!success){
+			show_alert_dialog("Failure","Data from server saving failed! Please try again.");
+		}
+	}
+	
+	private boolean insertAreas() throws JSONException{
+		JSONArray areaArray = objJsonQuestionaries.getJSONArray("Area");
+		String areaTitle;
+		int i, areaId;
+		
+		JSONObject areaObj;
+		
+		for(i = 0; i < areaArray.length(); i++) {
+			areaObj = areaArray.getJSONObject(i);
+			areaId = areaObj.getInt("area_id");
+			areaTitle = areaObj.getString("title");
+			
+			
+			if( !dbUtil.saveSku(skuId, skuTitle, skuCode, outletType, frontEndMenu, taskId, subsetId, isActiveSku, isEndSku) ){
+				break;
+			}
+		}
+		if( i<totalSku ) return false;
+		return true;
+	}
+	
+	private boolean insertLocations() throws JSONException{
+		JSONArray skuArray = objJsonQuestionaries.getJSONArray("Location");
+		String skuTitle, skuCode, outletType, frontEndMenu;
+		int i, skuId, taskId, subsetId, isActiveSku, isEndSku;
+		
+		JSONObject skuObj;
+		
+		for(i = 0; i < skuArray.length(); i++) {
+			skuObj = skuArray.getJSONObject(i);
+			skuId = skuObj.getInt("id");
+			taskId = skuObj.getInt("task_id");
+			skuTitle = skuObj.getString("sku_title");
+			
+			
+			if( !dbUtil.saveSku(skuId, skuTitle, skuCode, outletType, frontEndMenu, taskId, subsetId, isActiveSku, isEndSku) ){
+				break;
+			}
+		}
+		if( i<totalSku ) return false;
+		return true;
+	}
+	
+	private boolean insertPromoters() throws JSONException{
+		JSONArray skuArray = objJsonQuestionaries.getJSONArray("Promoter");
+		String skuTitle, skuCode, outletType, frontEndMenu;
+		int i, skuId, taskId, subsetId, isActiveSku, isEndSku;
+		
+		JSONObject skuObj;
+		
+		for(i = 0; i < skuArray.length(); i++) {
+			skuObj = skuArray.getJSONObject(i);
+			skuId = skuObj.getInt("id");
+			taskId = skuObj.getInt("task_id");
+			skuTitle = skuObj.getString("sku_title");
+			
+			
+			if( !dbUtil.saveSku(skuId, skuTitle, skuCode, outletType, frontEndMenu, taskId, subsetId, isActiveSku, isEndSku) ){
+				break;
+			}
+		}
+		if( i<totalSku ) return false;
+		return true;
+	}
+	
+	private boolean insertOccupations() throws JSONException{
+		JSONArray skuArray = objJsonQuestionaries.getJSONArray("Occupation");
+		String skuTitle, skuCode, outletType, frontEndMenu;
+		int i, skuId, taskId, subsetId, isActiveSku, isEndSku;
+		
+		JSONObject skuObj;
+		
+		for(i = 0; i < skuArray.length(); i++) {
+			skuObj = skuArray.getJSONObject(i);
+			skuId = skuObj.getInt("id");
+			taskId = skuObj.getInt("task_id");
+			skuTitle = skuObj.getString("sku_title");
+			
+			
+			if( !dbUtil.saveSku(skuId, skuTitle, skuCode, outletType, frontEndMenu, taskId, subsetId, isActiveSku, isEndSku) ){
+				break;
+			}
+		}
+		if( i<totalSku ) return false;
+		return true;
+	}
+	
+	private boolean insertPackages() throws JSONException{
+		JSONArray skuArray = objJsonQuestionaries.getJSONArray("Package");
+		String skuTitle, skuCode, outletType, frontEndMenu;
+		int i, skuId, taskId, subsetId, isActiveSku, isEndSku;
+		
+		JSONObject skuObj;
+		
+		for(i = 0; i < skuArray.length(); i++) {
+			skuObj = skuArray.getJSONObject(i);
+			skuId = skuObj.getInt("id");
+			taskId = skuObj.getInt("task_id");
+			skuTitle = skuObj.getString("sku_title");
+			
+			
+			if( !dbUtil.saveSku(skuId, skuTitle, skuCode, outletType, frontEndMenu, taskId, subsetId, isActiveSku, isEndSku) ){
+				break;
+			}
+		}
+		if( i<totalSku ) return false;
+		return true;
+	}
+	
+	private boolean insertMobileBrands() throws JSONException{
+		JSONArray skuArray = objJsonQuestionaries.getJSONArray("MobileBrand");
+		String skuTitle, skuCode, outletType, frontEndMenu;
+		int i, skuId, taskId, subsetId, isActiveSku, isEndSku;
+		
+		JSONObject skuObj;
+		
+		for(i = 0; i < skuArray.length(); i++) {
+			skuObj = skuArray.getJSONObject(i);
+			skuId = skuObj.getInt("id");
+			taskId = skuObj.getInt("task_id");
+			
+			
+			if( !dbUtil.saveSku(skuId, skuTitle, skuCode, outletType, frontEndMenu, taskId, subsetId, isActiveSku, isEndSku) ){
+				break;
+			}
+		}
+		if( i<totalSku ) return false;
+		return true;
+	}
+
+}

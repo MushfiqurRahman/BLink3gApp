@@ -24,12 +24,14 @@ public class ExperienceSQLiteOpenHelper extends SQLiteOpenHelper {
 	
 	private static final String LOCATION_ID = "location_id";
 	private static final String LOCATION_AREA_ID = "area_id";
+	private static final String LOCATION_TEAM_ID = "team_id";
 	private static final String LOCATION_TITLE = "title";
 	
 	private static final String PROMOTER_ID = "promoter_id";
 	private static final String PROMOTER_TEAM_ID = "team_id";
 	private static final String PROMOTER_TEAM_NAME = "team_name";
 	private static final String PROMOTER_PROMOTER_NAME = "promoter_name";
+	private static final String PROMOTER_CODE = "promoter_code";
 	
 	private static final String OCCUPATION_ID = "occupation_id";
 	private static final String OCCUPATION_TITLE = "title";
@@ -54,12 +56,14 @@ public class ExperienceSQLiteOpenHelper extends SQLiteOpenHelper {
 	
 	private static final String CREATE_TABLE_LOCATIONS = "create table "+ TABLE_LOCATIONS +
 			" ("+LOCATION_ID+" INTEGER PRIMARY KEY, "+LOCATION_AREA_ID+"" +
+					" INTEGER NOT NULL, "+LOCATION_TEAM_ID+
 					" INTEGER NOT NULL, "+LOCATION_TITLE+" text not null);";
 	
 	private static final String CREATE_TABLE_PROMOTERS = "create table "+ TABLE_PROMOTERS +
 			" ("+PROMOTER_ID+" INTEGER PRIMARY KEY, "+PROMOTER_TEAM_ID+
 			" INTEGER NOT NULL, "+PROMOTER_TEAM_NAME+" TEXT NOT NULL,"+
-			PROMOTER_PROMOTER_NAME+" text not null);";
+			PROMOTER_PROMOTER_NAME+" text not null, "+PROMOTER_CODE+
+			"text not null);";
 	
 	private static final String CREATE_TABLE_OCCUPATIONS = "create table "+ TABLE_OCCUPATIONS +
 			" ("+OCCUPATION_ID+" INTEGER PRIMARY KEY, "+OCCUPATION_TITLE+" text not null);";
@@ -91,5 +95,4 @@ public class ExperienceSQLiteOpenHelper extends SQLiteOpenHelper {
 		// TODO Auto-generated method stub
 
 	}
-
 }

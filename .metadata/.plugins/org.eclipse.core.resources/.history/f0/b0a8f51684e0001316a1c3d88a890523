@@ -1,0 +1,136 @@
+package com.example.gexperience.database;
+
+import com.shaiun.surveysystem.database.SurveySQLiteOpenHelper;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+
+
+public class DatabaseUtil {
+	
+	SQLiteOpenHelper dbHelper;
+	SQLiteDatabase database;
+	Context context;
+
+	public DatabaseUtil(Context ctx) {
+		dbHelper = new ExperienceSQLiteOpenHelper(ctx);
+		context = ctx;
+	}
+	
+	public void open(){
+		database = dbHelper.getWritableDatabase();
+	}
+
+	public void close() {
+		dbHelper.close();
+	}
+	
+	/**
+	 * Whether the data already fetched from server or not
+	 * @return
+	 */
+	public boolean isDbSynchronizedByServerData(){
+		Cursor cursor = database.rawQuery("SELECT * FROM "+  ExperienceSQLiteOpenHelper.TABLE_AREAS, null);
+		if( cursor!=null && cursor.getCount()>0 ){
+			return true;
+		}
+		return false;
+	}
+	
+	/**
+	 * @desc Deletes all table contents for database sync with backend. This is usually needed at the
+	 * beginning of a month.
+	 */
+	public void deleteTableContentsForDbSync(){
+		database.execSQL("DELETE FROM " + ExperienceSQLiteOpenHelper.TABLE_AREAS);
+		database.execSQL("VACUUM");
+		database.execSQL("DELETE FROM " + ExperienceSQLiteOpenHelper.TABLE_LOCATIONS);
+		database.execSQL("VACUUM");
+		database.execSQL("DELETE FROM " + ExperienceSQLiteOpenHelper.TABLE_PROMOTERS);
+		database.execSQL("VACUUM");
+		database.execSQL("DELETE FROM " + ExperienceSQLiteOpenHelper.TABLE_OCCUPATIONS);
+		database.execSQL("VACUUM");
+		database.execSQL("DELETE FROM " + ExperienceSQLiteOpenHelper.TABLE_PACKAGES);
+		database.execSQL("VACUUM");
+		database.execSQL("DELETE FROM " + ExperienceSQLiteOpenHelper.TABLE_MOBILE_BRANDS);
+		database.execSQL("VACUUM");
+	}
+	
+	public boolean save(int id, String title, String code, String outletType){
+		ContentValues cv = new ContentValues();
+		cv.put("id", id);
+		cv.put("sku_title", title);
+		cv.put("sku_code", code);
+		cv.put("outlet_type", outletType);
+		if( database.insert(ExperienceSQLiteOpenHelper.TABLE_, null, cv)>0 ){
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean save(int id, String title, String code, String outletType){
+		ContentValues cv = new ContentValues();
+		cv.put("id", id);
+		cv.put("sku_title", title);
+		cv.put("sku_code", code);
+		cv.put("outlet_type", outletType);
+		if( database.insert(ExperienceSQLiteOpenHelper.TABLE_, null, cv)>0 ){
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean save(int id, String title, String code, String outletType){
+		ContentValues cv = new ContentValues();
+		cv.put("id", id);
+		cv.put("sku_title", title);
+		cv.put("sku_code", code);
+		cv.put("outlet_type", outletType);
+		if( database.insert(ExperienceSQLiteOpenHelper.TABLE_, null, cv)>0 ){
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean save(int id, String title, String code, String outletType){
+		ContentValues cv = new ContentValues();
+		cv.put("id", id);
+		cv.put("sku_title", title);
+		cv.put("sku_code", code);
+		cv.put("outlet_type", outletType);
+		if( database.insert(ExperienceSQLiteOpenHelper.TABLE_, null, cv)>0 ){
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean save(int id, String title, String code, String outletType){
+		ContentValues cv = new ContentValues();
+		cv.put("id", id);
+		cv.put("sku_title", title);
+		cv.put("sku_code", code);
+		cv.put("outlet_type", outletType);
+		if( database.insert(ExperienceSQLiteOpenHelper.TABLE_, null, cv)>0 ){
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean save(int id, String title, String code, String outletType){
+		ContentValues cv = new ContentValues();
+		cv.put("id", id);
+		cv.put("sku_title", title);
+		cv.put("sku_code", code);
+		cv.put("outlet_type", outletType);
+		if( database.insert(ExperienceSQLiteOpenHelper.TABLE_, null, cv)>0 ){
+			return true;
+		}
+		return false;
+	}
+
+
+}

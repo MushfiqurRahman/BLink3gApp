@@ -6,6 +6,8 @@
 <fullyQualifiedTypeName name="com.example.gexperience.SplashScreen"/>
 <fullyQualifiedTypeName name="com.example.gexperience.SurveyActivity"/>
 <fullyQualifiedTypeName name="android.content.Intent"/>
-<fullyQualifiedTypeName name="com.example.gexperience.LoginActivity"/>
 <fullyQualifiedTypeName name="com.example.gexperience.R.id"/>
+<fullyQualifiedTypeName name="com.example.gexperience.database.DatabaseUtil"/>
+<fullyQualifiedTypeName name="com.example.gexperience.database.ExperienceSQLiteOpenHelper"/>
+<fullyQualifiedTypeName name="com.example.gexperience.LoginActivity"/>
 </qualifiedTypeNameHistroy>

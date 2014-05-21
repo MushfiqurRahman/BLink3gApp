@@ -2,23 +2,31 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
-		<item value="119" key="DIALOG_Y_ORIGIN"/>
+		<item value="477" key="DIALOG_Y_ORIGIN"/>
+		<item value="634" key="DIALOG_X_ORIGIN"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="392" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="" key="selection"/>
+		<item value="BASE_URL" key="selection"/>
 		<list key="findhistory">
-			<item value="btnLogin"/>
-			<item value="sbcr_3g"/>
+			<item value="BASE_URL"/>
+			<item value="saveSku"/>
+			<item value="saveAllDataInDb"/>
+			<item value="objJsonQuestionaries"/>
+			<item value="questionariesData"/>
+			<item value="HomeActivity"/>
+			<item value="isDbS"/>
+			<item value="SurveySQLiteOpenHelper"/>
 		</list>
 		<list key="replacehistory">
+			<item value="LoginActivity"/>
+			<item value="ExperienceSQLiteOpenHelper"/>
 			<item value="sbcr_is_3g"/>
 		</list>
 	</section>

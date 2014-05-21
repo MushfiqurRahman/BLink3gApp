@@ -16,7 +16,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.example.gexperience.database.DatabaseUtil;
-import com.shaiun.surveysystem.HomeActivity;
 
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
@@ -43,13 +42,14 @@ import android.os.Build;
 
 public class LoginActivity extends ActionBarActivity {
 	
-	private String BASE_URL = "http://localhost/2014/banglalink3g/api";
+	private String BASE_URL = "http://192.168.1.12/2014/banglalink3g/api";
 //	private String BASE_URL = "http://localhost/2014/banglalink3g/api";
 	
 	Button btnLogin;
 	private DatabaseUtil dbUtil;
 	private ProgressDialog dialog;
 	private String allDataFromServer;
+	JSONObject objJsonQuestionaries;	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +64,6 @@ public class LoginActivity extends ActionBarActivity {
 			new FetchAllDataFromServer().execute();
 		}
 		dbUtil.close();
-
 //		if (savedInstanceState == null) {
 //			getSupportFragmentManager().beginTransaction()
 //					.add(R.id.login_container, new PlaceholderFragment()).commit();
@@ -83,12 +82,6 @@ public class LoginActivity extends ActionBarActivity {
 			}
 		});
 	}
-	
-//	public void go_to_survey(){
-//        //Now going to survey activity
-//        Intent surveyIntent = new Intent(this, SurveyActivity.class);
-//        startActivity(surveyIntent);
-//	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -169,13 +162,12 @@ public class LoginActivity extends ActionBarActivity {
 		
 		@Override
 		protected void onPreExecute() {
-			// TODO Auto-generated method stub
 			dialog = ProgressDialog.show(LoginActivity.this, "Data Fetching", "Data Fetching from server...", true, true);
 		}
 		@Override
 		protected Void doInBackground(Void... arg0) {
 			try {
-				List<NameValuePair> postData = new ArrayList<NameValuePair>(1);
+				//List<NameValuePair> postData = new ArrayList<NameValuePair>(1);
 				//postData.add((NameValuePair) new BasicNameValuePair("device_id", "TempDeviceId"));
 				// = CommunicationLayer.getQuestioneriesData();
 				 //allDataFromServer = WebServerOperation.sendHTTPPostRequestToServer(BASE_URL+"/api_login", postData, true);
@@ -202,8 +194,7 @@ public class LoginActivity extends ActionBarActivity {
 		protected void onPostExecute(Void result) {
 			super.onPostExecute(result);
 			if (dialog.isShowing()) {
-				dialog.dismiss();
-				
+				dialog.dismiss();				
 			}
 			if( allDataFromServer.length()>0 ){
 				try {
@@ -234,24 +225,26 @@ public class LoginActivity extends ActionBarActivity {
 	
 	public void saveAllDataInDb(String questionaries) throws JSONException{
 		boolean success = true;
+		//that json object will be used in all the insertion method of this class
+		objJsonQuestionaries = new JSONObject(questionaries);
 				
 		dbUtil.open();		
-		if( !insertAreas(allDataFromServer) ){
+		if( !insertAreas() ){
 			success = false;
 		}
-		if( !insertLocations(allDataFromServer) ){
+		if( !insertLocations() ){
 			success = false;
 		}
-		if( !insertPromoters(allDataFromServer) ){
+		if( !insertPromoters() ){
 			success = false;
 		}
-		if( !insertOccupations(allDataFromServer) ){
+		if( !insertOccupations() ){
 			success = false;
 		}
-		if( !insertPackages(allDataFromServer) ){
+		if( !insertPackages() ){
 			success = false;
 		}
-		if( !insertMobileBrands(allDataFromServer) ){
+		if( !insertMobileBrands() ){
 			success = false;
 		}
 		dbUtil.close();
@@ -261,134 +254,124 @@ public class LoginActivity extends ActionBarActivity {
 		}
 	}
 	
-	private boolean insertAreas(String allDataFromServer) throws JSONException{
-		JSONArray skuArray = objJsonQuestionaries.getJSONArray("Sku");
-		String skuTitle, skuCode, outletType, frontEndMenu;
-		int i, skuId, taskId, subsetId, isActiveSku, isEndSku;
+	private boolean insertAreas() throws JSONException{
+		JSONArray areaArray = objJsonQuestionaries.getJSONArray("Area");
+		String areaTitle;
+		int i, areaId;
 		
-		JSONObject skuObj;
+		JSONObject areaObj;
 		
-		for(i = 0; i < skuArray.length(); i++) {
-			skuObj = skuArray.getJSONObject(i);
-			skuId = skuObj.getInt("id");
-			taskId = skuObj.getInt("task_id");
-			skuTitle = skuObj.getString("sku_title");
+		for(i = 0; i < areaArray.length(); i++) {
+			areaObj = areaArray.getJSONObject(i);
+			areaId = areaObj.getInt("area_id");
+			areaTitle = areaObj.getString("title");
 			
-			
-			if( !dbUtil.saveSku(skuId, skuTitle, skuCode, outletType, frontEndMenu, taskId, subsetId, isActiveSku, isEndSku) ){
+			if( !dbUtil.saveArea(areaId, areaTitle)){
 				break;
 			}
 		}
-		if( i<totalSku ) return false;
 		return true;
 	}
 	
-	private boolean insertLocations(String questionaries) throws JSONException{
-		JSONArray skuArray = objJsonQuestionaries.getJSONArray("Sku");
-		String skuTitle, skuCode, outletType, frontEndMenu;
-		int i, skuId, taskId, subsetId, isActiveSku, isEndSku;
+	private boolean insertLocations() throws JSONException{
+		JSONArray locArray = objJsonQuestionaries.getJSONArray("Location");
+		String title;
+		int i, locationId, areaId, teamId;
 		
-		JSONObject skuObj;
+		JSONObject locationObj;
 		
-		for(i = 0; i < skuArray.length(); i++) {
-			skuObj = skuArray.getJSONObject(i);
-			skuId = skuObj.getInt("id");
-			taskId = skuObj.getInt("task_id");
-			skuTitle = skuObj.getString("sku_title");
+		for(i = 0; i < locArray.length(); i++) {
+			locationObj = locArray.getJSONObject(i);
+			locationId = locationObj.getInt("location_id");
+			areaId = locationObj.getInt("area_id");
+			teamId = locationObj.getInt("team_id");
+			title = locationObj.getString("title");			
 			
-			
-			if( !dbUtil.saveSku(skuId, skuTitle, skuCode, outletType, frontEndMenu, taskId, subsetId, isActiveSku, isEndSku) ){
+			if( !dbUtil.saveLocation(locationId, areaId, teamId, title)){
 				break;
 			}
 		}
-		if( i<totalSku ) return false;
 		return true;
 	}
 	
-	private boolean insertPromoters(String questionaries) throws JSONException{
-		JSONArray skuArray = objJsonQuestionaries.getJSONArray("Sku");
-		String skuTitle, skuCode, outletType, frontEndMenu;
-		int i, skuId, taskId, subsetId, isActiveSku, isEndSku;
+	private boolean insertPromoters() throws JSONException{
+		JSONArray promoArray = objJsonQuestionaries.getJSONArray("Promoter");
+		String teamName, promoterName;
+		int i, promoterId, teamId;
 		
-		JSONObject skuObj;
+		JSONObject promoObj;
 		
-		for(i = 0; i < skuArray.length(); i++) {
-			skuObj = skuArray.getJSONObject(i);
-			skuId = skuObj.getInt("id");
-			taskId = skuObj.getInt("task_id");
-			skuTitle = skuObj.getString("sku_title");
+		for(i = 0; i < promoArray.length(); i++) {
+			promoObj = promoArray.getJSONObject(i);
+			promoterId = promoObj.getInt("promoter_id");
+			teamId = promoObj.getInt("team_id");
+			teamName = promoObj.getString("team_name");
+			promoterName = promoObj.getString("promoter_name");
 			
 			
-			if( !dbUtil.saveSku(skuId, skuTitle, skuCode, outletType, frontEndMenu, taskId, subsetId, isActiveSku, isEndSku) ){
+			if( !dbUtil.savePromoter(promoterId, teamId, teamName, promoterName) ){
 				break;
 			}
 		}
-		if( i<totalSku ) return false;
 		return true;
 	}
 	
-	private boolean insertOccupations(String questionaries) throws JSONException{
-		JSONArray skuArray = objJsonQuestionaries.getJSONArray("Sku");
-		String skuTitle, skuCode, outletType, frontEndMenu;
-		int i, skuId, taskId, subsetId, isActiveSku, isEndSku;
+	private boolean insertOccupations() throws JSONException{
+		JSONArray occuArray = objJsonQuestionaries.getJSONArray("Occupation");
+		String title;
+		int i, id;
 		
-		JSONObject skuObj;
+		JSONObject occuObj;
 		
-		for(i = 0; i < skuArray.length(); i++) {
-			skuObj = skuArray.getJSONObject(i);
-			skuId = skuObj.getInt("id");
-			taskId = skuObj.getInt("task_id");
-			skuTitle = skuObj.getString("sku_title");
+		for(i = 0; i < occuArray.length(); i++) {
+			occuObj = occuArray.getJSONObject(i);
+			id = occuObj.getInt("occupation_id");
+			title = occuObj.getString("title");
 			
-			
-			if( !dbUtil.saveSku(skuId, skuTitle, skuCode, outletType, frontEndMenu, taskId, subsetId, isActiveSku, isEndSku) ){
+			if( !dbUtil.saveOccupation(id, title)){
 				break;
 			}
 		}
-		if( i<totalSku ) return false;
 		return true;
 	}
 	
-	private boolean insertPackages(String questionaries) throws JSONException{
-		JSONArray skuArray = objJsonQuestionaries.getJSONArray("Sku");
-		String skuTitle, skuCode, outletType, frontEndMenu;
-		int i, skuId, taskId, subsetId, isActiveSku, isEndSku;
+	private boolean insertPackages() throws JSONException{
+		JSONArray packageArray = objJsonQuestionaries.getJSONArray("Package");
+		String title;
+		int i, id;
 		
-		JSONObject skuObj;
+		JSONObject pkgObj;
 		
-		for(i = 0; i < skuArray.length(); i++) {
-			skuObj = skuArray.getJSONObject(i);
-			skuId = skuObj.getInt("id");
-			taskId = skuObj.getInt("task_id");
-			skuTitle = skuObj.getString("sku_title");
+		for(i = 0; i < packageArray.length(); i++) {
+			pkgObj = packageArray.getJSONObject(i);
+			id = pkgObj.getInt("package_id");
+			title = pkgObj.getString("title");
 			
 			
-			if( !dbUtil.saveSku(skuId, skuTitle, skuCode, outletType, frontEndMenu, taskId, subsetId, isActiveSku, isEndSku) ){
+			if( !dbUtil.savePackage(id, title) ){
 				break;
 			}
 		}
-		if( i<totalSku ) return false;
 		return true;
 	}
 	
-	private boolean insertMobileBrands(String questionaries) throws JSONException{
-		JSONArray skuArray = objJsonQuestionaries.getJSONArray("Sku");
-		String skuTitle, skuCode, outletType, frontEndMenu;
-		int i, skuId, taskId, subsetId, isActiveSku, isEndSku;
+	private boolean insertMobileBrands() throws JSONException{
+		JSONArray brandArray = objJsonQuestionaries.getJSONArray("MobileBrand");
+		String title;
+		int i, id;
 		
-		JSONObject skuObj;
+		JSONObject brandObj;
 		
-		for(i = 0; i < skuArray.length(); i++) {
-			skuObj = skuArray.getJSONObject(i);
-			skuId = skuObj.getInt("id");
-			taskId = skuObj.getInt("task_id");
+		for(i = 0; i < brandArray.length(); i++) {
+			brandObj = brandArray.getJSONObject(i);
+			id = brandObj.getInt("mobile_brand_id");
+			title = brandObj.getString("title");
 			
 			
-			if( !dbUtil.saveSku(skuId, skuTitle, skuCode, outletType, frontEndMenu, taskId, subsetId, isActiveSku, isEndSku) ){
+			if( !dbUtil.saveMobileBrand(id, title)){
 				break;
 			}
 		}
-		if( i<totalSku ) return false;
 		return true;
 	}
 
