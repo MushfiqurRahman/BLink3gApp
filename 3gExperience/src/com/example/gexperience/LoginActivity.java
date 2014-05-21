@@ -16,10 +16,13 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.example.gexperience.database.DatabaseUtil;
+import com.example.gexperience.database.ExperienceSQLiteOpenHelper;
 
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
@@ -32,8 +35,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterViewFlipper;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.os.Build;
@@ -50,6 +56,8 @@ public class LoginActivity extends ActionBarActivity {
 	private ProgressDialog dialog;
 	private String allDataFromServer;
 	JSONObject objJsonQuestionaries;	
+	EditText edtBpCode;
+	Spinner spnArea, spnLocation;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +89,30 @@ public class LoginActivity extends ActionBarActivity {
 		        finish();
 			}
 		});
+		
+		edtBpCode = (EditText)findViewById(R.id.edtBpCode);
+		edtBpCode.addTextChangedListener(new TextWatcher() {
+			
+			@Override
+			public void onTextChanged(CharSequence s, int start, int before, int count) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public void beforeTextChanged(CharSequence s, int start, int count,
+					int after) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public void afterTextChanged(Editable arg0) {				
+				if( edtBpCode.getText().toString().length()==4 ){
+					populate_area_spinner();
+				}
+			}
+		});		
 	}
 
 	@Override
@@ -109,23 +141,13 @@ public class LoginActivity extends ActionBarActivity {
 	        alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Yes", new DialogInterface.OnClickListener() {							
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
-					dialog = ProgressDialog.show(LoginActivity.this, "Synchronizing", "Please wait...", true, true, new DialogInterface.OnCancelListener() {
-						
-						@Override
-						public void onCancel(DialogInterface dialog) {
-							
-						}
-					});
+
 					dbUtil.open();
 					dbUtil.deleteTableContentsForDbSync();
 					
-					dialog.dismiss();
-//					
-//					if( !dbUtil.isDbSynchronizedByServerData() ){
-//						new GetQuestioneriesDataTask().execute();
-//						dbUtil.close();
-//					}
-//					dbUtil.close();
+					new FetchAllDataFromServer().execute();
+					dbUtil.close();
+					
 				}
 			});
 	        alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "No", new DialogInterface.OnClickListener() {							
@@ -373,6 +395,46 @@ public class LoginActivity extends ActionBarActivity {
 			}
 		}
 		return true;
+	}
+	
+	public void populate_area_spinner(){
+		List<String> areas;
+		ArrayAdapter<String> adapterArea;
+		
+		
+		dbUtil = new DatabaseUtil(LoginActivity.this);
+		dbUtil.open();
+		
+		areas = dbUtil.getSpinnerItems(ExperienceSQLiteOpenHelper.TABLE_AREAS);		
+		dbUtil.close();
+		
+		spnArea = (Spinner)findViewById(R.id.spnArea);		
+		
+		adapterArea = new ArrayAdapter<String>(LoginActivity.this, android.R.layout.simple_spinner_item, areas);
+		adapterArea.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spnArea.setAdapter(adapterArea);
+		
+//		spnArea.setOnItemSelectedListener(new OnItemSelectedListener() {
+//			populate_location_spinner();
+//		});
+	}
+	
+	public void populate_location_spinner(){
+		List<String> locations;
+		ArrayAdapter<String> adapterLocation;
+		
+		
+		dbUtil = new DatabaseUtil(LoginActivity.this);
+		dbUtil.open();
+		
+		locations = dbUtil.getLocationList(spnArea.getSelectedItem().toString());		
+		dbUtil.close();
+		
+		spnLocation = (Spinner)findViewById(R.id.spnLocation);		
+		
+		adapterLocation = new ArrayAdapter<String>(LoginActivity.this, android.R.layout.simple_spinner_item, locations);
+		adapterLocation.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spnArea.setAdapter(adapterLocation);
 	}
 
 }

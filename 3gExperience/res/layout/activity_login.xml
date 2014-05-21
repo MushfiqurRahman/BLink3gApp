@@ -64,7 +64,7 @@
         </LinearLayout>
 
         <EditText
-            android:id="@+id/etPassword"
+            android:id="@+id/edtBpCode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
@@ -89,7 +89,7 @@
         </LinearLayout>
 
         <Spinner
-            android:id="@+id/spnEngineer"
+            android:id="@+id/spnArea"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
@@ -115,7 +115,7 @@
         </LinearLayout>
 
         <Spinner
-            android:id="@+id/spnCompany"
+            android:id="@+id/spnLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"

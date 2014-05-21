@@ -142,6 +142,9 @@ public class DatabaseUtil {
 		}else if(tblName.equals(ExperienceSQLiteOpenHelper.TABLE_MOBILE_BRANDS)){
 				qry += ExperienceSQLiteOpenHelper.MOBILE_BRAND_TITLE+
 				" FROM "+ExperienceSQLiteOpenHelper.TABLE_MOBILE_BRANDS;
+		}else if(tblName.equals(ExperienceSQLiteOpenHelper.TABLE_AREAS)){
+			qry += ExperienceSQLiteOpenHelper.AREA_TITLE+
+			" FROM "+ExperienceSQLiteOpenHelper.TABLE_AREAS;
 		}
 		
 		Cursor cursor = database.rawQuery(qry, null);
@@ -184,5 +187,47 @@ public class DatabaseUtil {
 		}		
 		cursor.close();
 		return 0;
+	}
+	
+//	public List<String> getAreaList(String promoterCode){
+//		//first select teamid, then areaid, then arealist
+//		int teamId;
+//		Cursor cursor = database.rawQuery("SELECT "+ExperienceSQLiteOpenHelper.PROMOTER_TEAM_ID+
+//				" FROM "+ExperienceSQLiteOpenHelper.TABLE_PROMOTERS+
+//				" WHERE "+ExperienceSQLiteOpenHelper.PROMOTER_CODE+
+//				"='"+promoterCode+"'", null);
+//		
+//		cursor.moveToFirst();
+//		if(cursor.getCount()>0){
+//			return cursor.getInt(0);
+//		}		
+//		cursor.close();
+//		return 0;
+//	}
+	
+	public List<String> getLocationList(String selectedArea){
+		int areaId;
+		List<String> locations = new ArrayList<String>();
+		
+		Cursor cursor = database.rawQuery("SELECT "+ExperienceSQLiteOpenHelper.AREA_ID+
+				" FROM "+ExperienceSQLiteOpenHelper.TABLE_AREAS+
+				" WHERE "+ExperienceSQLiteOpenHelper.AREA_TITLE+"='"+
+				selectedArea+"'", null);
+		areaId = cursor.getInt(0);
+		cursor.close();
+		
+		Cursor cursor2 = database.rawQuery("SELECT "+ExperienceSQLiteOpenHelper.LOCATION_TITLE+
+				" FROM "+ExperienceSQLiteOpenHelper.TABLE_LOCATIONS+
+				" WHERE "+ExperienceSQLiteOpenHelper.AREA_ID+"="+
+				Integer.toString(areaId), null);
+	
+		cursor2.moveToFirst();
+		if(cursor2.getCount()>0){
+			do{
+				locations.add(cursor2.getString(0));
+			}while(cursor2.moveToNext());
+		}		
+		cursor2.close();
+		return locations;
 	}
 }
