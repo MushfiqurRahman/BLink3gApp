@@ -2,12 +2,30 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="android.widget.TextView"/>
 <fullyQualifiedTypeName name="android.widget.Button"/>
-<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 <fullyQualifiedTypeName name="com.example.gexperience.SplashScreen"/>
-<fullyQualifiedTypeName name="com.example.gexperience.SurveyActivity"/>
 <fullyQualifiedTypeName name="android.content.Intent"/>
-<fullyQualifiedTypeName name="com.example.gexperience.R.id"/>
 <fullyQualifiedTypeName name="com.example.gexperience.database.DatabaseUtil"/>
-<fullyQualifiedTypeName name="com.example.gexperience.database.ExperienceSQLiteOpenHelper"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.example.gexperience.datamodel.Occupation"/>
+<fullyQualifiedTypeName name="android.widget.Spinner"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.widget.EditText"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="android.app.ProgressDialog"/>
+<fullyQualifiedTypeName name="com.example.gexperience.SurveyActivity.SurveyUploader"/>
+<fullyQualifiedTypeName name="android.widget.RadioGroup"/>
+<fullyQualifiedTypeName name="com.example.gexperience.R.id"/>
+<fullyQualifiedTypeName name="com.example.gexperience.SurveyActivity"/>
+<fullyQualifiedTypeName name="android.widget.RadioButton"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="android.text.Editable"/>
+<fullyQualifiedTypeName name="android.text.TextWatcher"/>
 <fullyQualifiedTypeName name="com.example.gexperience.LoginActivity"/>
+<fullyQualifiedTypeName name="com.example.gexperience.database.ExperienceSQLiteOpenHelper"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="android.widget.AdapterViewFlipper"/>
+<fullyQualifiedTypeName name="android.widget.AdapterView.OnItemSelectedListener"/>
 </qualifiedTypeNameHistroy>

@@ -262,6 +262,31 @@
                 android:layout_gravity="left" >
 
                 <TextView
+                    android:id="@+id/tvNewPackage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/sbcr_new_package"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spnNewPackage"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="15dp"
+                android:background="#FFFFFF"
+                android:padding="5dp"
+                android:spinnerMode="dropdown"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left" >
+
+                <TextView
                     android:id="@+id/tvMobileBrand"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -272,7 +297,32 @@
             </LinearLayout>
 
             <Spinner
-                android:id="@+id/spnMobileBrad"
+                android:id="@+id/spnMobileBrand"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="15dp"
+                android:background="#FFFFFF"
+                android:padding="5dp"
+                android:spinnerMode="dropdown"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left" >
+
+                <TextView
+                    android:id="@+id/tvMobileType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/sbcr_mobile_Type"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spnMobileType"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginBottom="15dp"

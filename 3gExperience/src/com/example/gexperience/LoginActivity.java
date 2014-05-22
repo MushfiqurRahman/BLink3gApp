@@ -48,7 +48,7 @@ import android.os.Build;
 
 public class LoginActivity extends ActionBarActivity {
 	
-	public static String BASE_URL = "http://192.168.1.12/2014/banglalink3g/api";
+	public static String BASE_URL = "http://192.168.0.103/2014/banglalink3g/api";
 //	private String BASE_URL = "http://localhost/2014/banglalink3g/api";
 	
 	Button btnLogin;

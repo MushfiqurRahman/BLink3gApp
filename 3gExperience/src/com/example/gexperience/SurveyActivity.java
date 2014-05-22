@@ -53,7 +53,7 @@ public class SurveyActivity extends ActionBarActivity {
 	
 	Button btnSubmit, btnReset;
 	DatabaseUtil dbUtil;
-	Spinner spnOccupation, spnPackage, spnMobileBrand;
+	Spinner spnOccupation, spnPackage, spnMobileBrand, spnNewPackage, spnMobileTypes;
 	ProgressDialog progressDialog;
 	String serverResponse;
 	JSONObject jDataObj;
@@ -156,8 +156,9 @@ public class SurveyActivity extends ActionBarActivity {
 	 * 
 	 */
 	public void populate_spinners(){
-		List<String> occupations, packages, mobileBrands;
+		List<String> occupations, packages, mobileBrands, mobileTypes, newPackages;
 		ArrayAdapter<String> adapterOccupation, adapterPackage, adapterMobileBrand;
+		ArrayAdapter<String> adapterNewPackage, adapterMobileType;
 		
 		
 		dbUtil = new DatabaseUtil(SurveyActivity.this);
@@ -166,12 +167,17 @@ public class SurveyActivity extends ActionBarActivity {
 		occupations = dbUtil.getSpinnerItems(ExperienceSQLiteOpenHelper.TABLE_OCCUPATIONS);
 		packages = dbUtil.getSpinnerItems(ExperienceSQLiteOpenHelper.TABLE_PACKAGES);
 		mobileBrands = dbUtil.getSpinnerItems(ExperienceSQLiteOpenHelper.TABLE_MOBILE_BRANDS);
-		
 		dbUtil.close();
+		
+		mobileTypes = new ArrayList<String>();
+		mobileTypes.add("Regular Phone");
+		mobileTypes.add("Smart Phone");		
 		
 		spnOccupation = (Spinner)findViewById(R.id.spnOccupation);
 		spnPackage = (Spinner)findViewById(R.id.spnPackageTypes);
-		spnMobileBrand = (Spinner)findViewById(R.id.spnMobileBrad);
+		spnNewPackage = (Spinner)findViewById(R.id.spnNewPackage);
+		spnMobileBrand = (Spinner)findViewById(R.id.spnMobileBrand);
+		spnMobileTypes = (Spinner)findViewById(R.id.spnMobileType);
 		
 		adapterOccupation = new ArrayAdapter<String>(SurveyActivity.this, android.R.layout.simple_spinner_item, occupations);
 		adapterOccupation.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -181,9 +187,26 @@ public class SurveyActivity extends ActionBarActivity {
 		adapterPackage.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnPackage.setAdapter(adapterPackage);
 		
+		//New package should have the none option since user may not buy a package instantly
+		newPackages = new ArrayList<String>();
+		newPackages.add("None");
+		
+		for(String pckg: packages){
+			newPackages.add(pckg);
+		}
+		
+		
+		adapterNewPackage = new ArrayAdapter<String>(SurveyActivity.this, android.R.layout.simple_spinner_item, newPackages);
+		adapterNewPackage.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spnNewPackage.setAdapter(adapterNewPackage);
+		
 		adapterMobileBrand = new ArrayAdapter<String>(SurveyActivity.this, android.R.layout.simple_spinner_item, mobileBrands);
 		adapterMobileBrand.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnMobileBrand.setAdapter(adapterMobileBrand);
+		
+		adapterMobileType = new ArrayAdapter<String>(SurveyActivity.this, android.R.layout.simple_spinner_item, mobileTypes);
+		adapterMobileType.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spnMobileTypes.setAdapter(adapterMobileType);
 	}
 
 
@@ -207,22 +230,6 @@ public class SurveyActivity extends ActionBarActivity {
 		return super.onOptionsItemSelected(item);
 	}
 
-	/**
-	 * A placeholder fragment containing a simple view.
-	 */
-//	public static class PlaceholderFragment extends Fragment {
-//
-//		public PlaceholderFragment() {
-//		}
-//
-//		@Override
-//		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-//				Bundle savedInstanceState) {
-//			View rootView = inflater.inflate(R.layout.fragment_survey_bak,
-//					container, false);
-//			return rootView;
-//		}
-//	}
 	
 	private void show_alert_dialog(String title, String msg){
 		AlertDialog alertDialog = new AlertDialog.Builder(SurveyActivity.this).create();
@@ -252,7 +259,13 @@ public class SurveyActivity extends ActionBarActivity {
 			//making it empty otherwise it may cause problem in onPostExecute method
 			serverResponse = "";
 			
-			int occupation_id, package_id, mobile_brand_id;
+			int occupation_id, package_id, new_package_id, mobile_brand_id;
+			int is_smart_phone = 0;
+			
+			if(((Spinner)findViewById(R.id.spnMobileType)).getSelectedItem().toString().equals("Smart Phone")){
+				is_smart_phone = 1;
+			}
+			
 			dbUtil = new DatabaseUtil(SurveyActivity.this);
 			dbUtil.open();
 			
@@ -262,10 +275,13 @@ public class SurveyActivity extends ActionBarActivity {
 			package_id = dbUtil.getId(ExperienceSQLiteOpenHelper.TABLE_PACKAGES,
 					((Spinner)findViewById(R.id.spnPackageTypes)).getSelectedItem().toString());
 			
-			mobile_brand_id = dbUtil.getId(ExperienceSQLiteOpenHelper.TABLE_MOBILE_BRANDS,
-					((Spinner)findViewById(R.id.spnMobileBrad)).getSelectedItem().toString());
+			new_package_id = dbUtil.getId(ExperienceSQLiteOpenHelper.TABLE_PACKAGES,
+					((Spinner)findViewById(R.id.spnNewPackage)).getSelectedItem().toString());
 			
-			dbUtil.close();
+			mobile_brand_id = dbUtil.getId(ExperienceSQLiteOpenHelper.TABLE_MOBILE_BRANDS,
+					((Spinner)findViewById(R.id.spnMobileBrand)).getSelectedItem().toString());
+			
+			dbUtil.close();			
 
 			try {
 				HttpClient httpclient = new DefaultHttpClient();
@@ -283,6 +299,8 @@ public class SurveyActivity extends ActionBarActivity {
 				reqEntry.addPart("occupation_id", new StringBody(Integer.toString(occupation_id)));
 				reqEntry.addPart("mobile_brand_id", new StringBody(Integer.toString(mobile_brand_id)));
 				reqEntry.addPart("package_id", new StringBody(Integer.toString(package_id)));
+				reqEntry.addPart("new_package_id", new StringBody(Integer.toString(new_package_id)));
+				reqEntry.addPart("is_smart_phone", new StringBody(Integer.toString(is_smart_phone)));
 				
 				if( is_three_g() ){
 					reqEntry.addPart("is_3g", new StringBody("1"));
