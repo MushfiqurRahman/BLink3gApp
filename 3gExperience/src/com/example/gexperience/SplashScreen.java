@@ -12,21 +12,47 @@ import android.view.ViewGroup;
 
 public class SplashScreen extends ActionBarActivity {
 
-    @Override
+	private Thread mSplashThread;
+	
+	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+        
+final SplashScreen sPlashScreen = this;   
+        
+        // The thread to wait for splash screen events
+        mSplashThread =  new Thread(){
+            @Override
+            public void run(){
+                try {
+                    synchronized(this){
+                        // Wait given period of time or exit on touch
+                        wait(3000);
+                    }
+                }
+                catch(InterruptedException ex){                    
+                }
 
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.splash_container, new PlaceholderFragment())
-                    .commit();
-        }
+                finish();
+                
+                startActivity(new Intent(SplashScreen.this, LoginActivity.class));
+                finish();
+               // stop();                    
+            }
+        };
+        
+        mSplashThread.start();
+
+//        if (savedInstanceState == null) {
+//            getSupportFragmentManager().beginTransaction()
+//                    .add(R.id.splash_container, new PlaceholderFragment())
+//                    .commit();
+//        }
         
         
         
-        startActivity(new Intent(SplashScreen.this, LoginActivity.class));
-        finish();
+        
         //Now going to login activity
 //        Intent loginIntent = new Intent(this, LoginActivity.class);
 //        startActivity(loginIntent);
@@ -60,18 +86,18 @@ public class SplashScreen extends ActionBarActivity {
     /**
      * A placeholder fragment containing a simple view.
      */
-    public static class PlaceholderFragment extends Fragment {
-
-        public PlaceholderFragment() {
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_splash_screen, container, false);
-            return rootView;
-        }
-    }
+//    public static class PlaceholderFragment extends Fragment {
+//
+//        public PlaceholderFragment() {
+//        }
+//
+//        @Override
+//        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+//                Bundle savedInstanceState) {
+//            View rootView = inflater.inflate(R.layout.fragment_splash_screen, container, false);
+//            return rootView;
+//        }
+//    }
     
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

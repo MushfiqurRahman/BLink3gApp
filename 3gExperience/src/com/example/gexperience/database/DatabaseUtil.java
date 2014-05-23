@@ -10,6 +10,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 
 
@@ -87,12 +88,13 @@ public class DatabaseUtil {
 		return false;
 	}
 	
-	public boolean savePromoter(int id, int teamId, String teamName, String promoName){
+	public boolean savePromoter(int id, int teamId, String teamName, String promoName, String promoCode){
 		ContentValues cv = new ContentValues();
 		cv.put("promoter_id", id);
 		cv.put("team_id", teamId);
 		cv.put("team_name", teamName);
 		cv.put("promoter_name", promoName);
+		cv.put("promoter_code", promoCode);
 		if( database.insert(ExperienceSQLiteOpenHelper.TABLE_PROMOTERS, null, cv)>0 ){
 			return true;
 		}
@@ -177,6 +179,16 @@ public class DatabaseUtil {
 				" FROM "+ExperienceSQLiteOpenHelper.TABLE_MOBILE_BRANDS+
 				" WHERE "+ExperienceSQLiteOpenHelper.MOBILE_BRAND_TITLE+
 				"='"+titleValue+"'";
+		}else if(tblName.equals(ExperienceSQLiteOpenHelper.TABLE_PROMOTERS)){
+			qry += ExperienceSQLiteOpenHelper.PROMOTER_ID+
+					" FROM "+ExperienceSQLiteOpenHelper.TABLE_PROMOTERS+
+					" WHERE "+ExperienceSQLiteOpenHelper.PROMOTER_CODE+
+					"='"+titleValue+"'";
+		}else if(tblName.equals(ExperienceSQLiteOpenHelper.TABLE_LOCATIONS)){
+			qry += ExperienceSQLiteOpenHelper.LOCATION_ID+
+					" FROM "+ExperienceSQLiteOpenHelper.TABLE_LOCATIONS+
+					" WHERE "+ExperienceSQLiteOpenHelper.LOCATION_TITLE+
+					"='"+titleValue+"'";
 		}
 		
 		Cursor cursor = database.rawQuery(qry, null);
@@ -189,31 +201,81 @@ public class DatabaseUtil {
 		return 0;
 	}
 	
-//	public List<String> getAreaList(String promoterCode){
-//		//first select teamid, then areaid, then arealist
-//		int teamId;
-//		Cursor cursor = database.rawQuery("SELECT "+ExperienceSQLiteOpenHelper.PROMOTER_TEAM_ID+
-//				" FROM "+ExperienceSQLiteOpenHelper.TABLE_PROMOTERS+
-//				" WHERE "+ExperienceSQLiteOpenHelper.PROMOTER_CODE+
-//				"='"+promoterCode+"'", null);
-//		
-//		cursor.moveToFirst();
-//		if(cursor.getCount()>0){
-//			return cursor.getInt(0);
-//		}		
-//		cursor.close();
-//		return 0;
-//	}
+	public List<String> getAreaList(String promoterCode){
+		List<String> areas = new ArrayList<String>();
+		List<Integer> areaIds = new ArrayList<Integer>();
+		
+		//first select teamid, then areaid, then arealist
+		int teamId = 0;
+		Cursor cursor = database.rawQuery("SELECT "+ExperienceSQLiteOpenHelper.PROMOTER_TEAM_ID+
+				" FROM "+ExperienceSQLiteOpenHelper.TABLE_PROMOTERS+
+				" WHERE "+ExperienceSQLiteOpenHelper.PROMOTER_CODE+
+				"='"+promoterCode+"'", null);
+		
+		cursor.moveToFirst();
+		if(cursor.getCount()>0){
+			teamId = cursor.getInt(0);
+		}		
+		cursor.close();
+		
+		if( teamId>0 ){		
+			//now finding the area ids from team id
+			Cursor curFindAreaIds = database.rawQuery("SELECT "+ExperienceSQLiteOpenHelper.LOCATION_AREA_ID+
+					" FROM "+ExperienceSQLiteOpenHelper.TABLE_LOCATIONS+
+					" WHERE "+ExperienceSQLiteOpenHelper.AREA_ID+
+					"="+teamId+"", null);
+			curFindAreaIds.moveToFirst();
+			if( curFindAreaIds.getCount()>0 ){
+				do{
+					areaIds.add(curFindAreaIds.getInt(0));
+				}while(curFindAreaIds.moveToNext());
+			}
+			curFindAreaIds.close();
+			
+			if( !areaIds.isEmpty() ){
+				//now finding the area list from area ids
+				String qry = "SELECT "+ExperienceSQLiteOpenHelper.AREA_TITLE+
+						" FROM "+ExperienceSQLiteOpenHelper.TABLE_AREAS+" WHERE ";
+						
+				boolean isFirst = true;
+				
+				for(Integer arId: areaIds){
+					if( isFirst ){
+						qry += ExperienceSQLiteOpenHelper.AREA_ID + "="+arId;
+						isFirst = false;
+					}else{
+						qry += " OR "+ExperienceSQLiteOpenHelper.AREA_ID + "="+arId;
+					}		
+				}
+				
+				Cursor curFinal = database.rawQuery(qry, null);
+				curFinal.moveToFirst();
+				if( curFinal.getCount()>0 ){
+					do{
+						areas.add(curFinal.getString(0));
+					}while(curFinal.moveToNext());
+				}
+			}
+		}		
+		return areas;
+	}
 	
 	public List<String> getLocationList(String selectedArea){
-		int areaId;
+		int areaId = 0;
 		List<String> locations = new ArrayList<String>();
-		
+				
 		Cursor cursor = database.rawQuery("SELECT "+ExperienceSQLiteOpenHelper.AREA_ID+
-				" FROM "+ExperienceSQLiteOpenHelper.TABLE_AREAS+
-				" WHERE "+ExperienceSQLiteOpenHelper.AREA_TITLE+"='"+
-				selectedArea+"'", null);
-		areaId = cursor.getInt(0);
+		" FROM "+ExperienceSQLiteOpenHelper.TABLE_AREAS+
+		" WHERE "+ExperienceSQLiteOpenHelper.AREA_TITLE+"='"+
+		selectedArea+"'", null);
+		
+		cursor.moveToFirst();
+		if( cursor.getCount()>0){
+			do{
+				areaId = cursor.getInt(0);
+				//Log.i("Area titleeee", cursor.getString(1));
+			}while(cursor.moveToNext());
+		}
 		cursor.close();
 		
 		Cursor cursor2 = database.rawQuery("SELECT "+ExperienceSQLiteOpenHelper.LOCATION_TITLE+

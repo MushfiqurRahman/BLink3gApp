@@ -57,11 +57,19 @@ public class SurveyActivity extends ActionBarActivity {
 	ProgressDialog progressDialog;
 	String serverResponse;
 	JSONObject jDataObj;
+	int promoterId, locationId;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_survey);
+		
+		Bundle extras = getIntent().getExtras();
+		promoterId = Integer.parseInt(extras.getString("promoter_id"));
+		locationId = Integer.parseInt(extras.getString("location_id"));
+		
+		Log.i("Promo IDDDDDDDDd", Integer.toString(promoterId));
+        Log.i("Loc IDDDDDDDDd", Integer.toString(locationId));
 		
 		populate_spinners();
 		
@@ -226,6 +234,12 @@ public class SurveyActivity extends ActionBarActivity {
 		int id = item.getItemId();
 		if (id == R.id.action_settings) {
 			return true;
+		}else if (id == R.id.action_logout) {
+			//Now going to survey activity
+	        Intent loginIntent = new Intent(SurveyActivity.this, LoginActivity.class);
+	        startActivity(loginIntent);	        
+	        finish();	        
+			return true;
 		}
 		return super.onOptionsItemSelected(item);
 	}
@@ -288,8 +302,8 @@ public class SurveyActivity extends ActionBarActivity {
 				HttpPost httppost = new HttpPost(LoginActivity.BASE_URL+"/receive_survey_data");
 				MultipartEntity reqEntry = new MultipartEntity(HttpMultipartMode.BROWSER_COMPATIBLE);
 				
-				reqEntry.addPart("promoter_id", new StringBody("1"));
-				reqEntry.addPart("location_id", new StringBody("1"));
+				reqEntry.addPart("promoter_id", new StringBody(Integer.toString(promoterId)));
+				reqEntry.addPart("location_id", new StringBody(Integer.toString(locationId)));
 							
 				reqEntry.addPart("name", new StringBody(((EditText)findViewById(R.id.edtName)).getText().toString().trim()));
 				reqEntry.addPart("age", new StringBody(((EditText)findViewById(R.id.edtAge)).getText().toString().trim()));

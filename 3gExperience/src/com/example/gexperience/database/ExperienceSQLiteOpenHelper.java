@@ -3,12 +3,13 @@ package com.example.gexperience.database;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 public class ExperienceSQLiteOpenHelper extends SQLiteOpenHelper {
 		
 	private static final String TAG = "DataBaseUtil";
 	private static final String DATABASE_NAME = "3g_experience";
-	private static final int DATABASE_VERSION = 1;
+	private static final int DATABASE_VERSION = 2;
 	
 	public static final String TABLE_AREAS = "areas";	
 	public static final String TABLE_LOCATIONS = "location";
@@ -63,7 +64,7 @@ public class ExperienceSQLiteOpenHelper extends SQLiteOpenHelper {
 			" ("+PROMOTER_ID+" INTEGER PRIMARY KEY, "+PROMOTER_TEAM_ID+
 			" INTEGER NOT NULL, "+PROMOTER_TEAM_NAME+" TEXT NOT NULL,"+
 			PROMOTER_PROMOTER_NAME+" text not null, "+PROMOTER_CODE+
-			"text not null);";
+			" text not null);";
 	
 	private static final String CREATE_TABLE_OCCUPATIONS = "create table "+ TABLE_OCCUPATIONS +
 			" ("+OCCUPATION_ID+" INTEGER PRIMARY KEY, "+OCCUPATION_TITLE+" text not null);";
