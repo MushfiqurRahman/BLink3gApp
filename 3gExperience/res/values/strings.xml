@@ -16,8 +16,7 @@
     <string name="sbcr_age">Age</string>
     <string name="sbcr_gender">Gender</string>
     <string name="sbcr_mobile">Mobile Number</string>
-    <string name="sbcr_is_3g">Using 3G Pack</string>
-    <string name="sbcr_package_type">Current Package</string>
+    <string name="buying_3g">Buying 3G Pack</string>
     <string name="sbcr_mobile_brand">Mobile Brand</string>
     <string name="sbcr_recharge">Monthly Recharge</string>
     <string name="submit">Submit</string>
@@ -25,6 +24,7 @@
     <string name="action_db_sync">Sync Database</string>
     <string name="logout">Logout</string>
     <string name="sbcr_mobile_Type">Mobile Type</string>
-    <string name="sbcr_new_package">New Package</string>
+    <string name="sbcr_package">New Package</string>
+    <string name="sbcr_monthly_internet_usage">Monthly Internet Usage</string>
     
 </resources>

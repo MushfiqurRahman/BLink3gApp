@@ -95,6 +95,7 @@ public class DatabaseUtil {
 		cv.put("team_name", teamName);
 		cv.put("promoter_name", promoName);
 		cv.put("promoter_code", promoCode);
+		//Log.i("Promo Codeeeeeee",promoCode);
 		if( database.insert(ExperienceSQLiteOpenHelper.TABLE_PROMOTERS, null, cv)>0 ){
 			return true;
 		}

@@ -8,6 +8,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.TimeZone;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -28,6 +29,7 @@ import com.example.gexperience.datamodel.Occupation;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
+import android.text.format.DateFormat;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
@@ -41,28 +43,31 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.AdapterView.OnItemSelectedListener;
 import android.os.Build;
 
 public class SurveyActivity extends ActionBarActivity {
 	
 	Button btnSubmit, btnReset;
 	DatabaseUtil dbUtil;
-	Spinner spnOccupation, spnPackage, spnMobileBrand, spnNewPackage, spnMobileTypes;
+	Spinner spnOccupation, spnMonthlyInternetUsage, spnMobileBrand, spnPackage, spnMobileTypes;
 	ProgressDialog progressDialog;
 	String serverResponse;
 	JSONObject jDataObj;
+	RadioGroup rgIsBuying;
 	int promoterId, locationId;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_survey);
+		setContentView(R.layout.activity_survey);	
 		
 		Bundle extras = getIntent().getExtras();
 		promoterId = Integer.parseInt(extras.getString("promoter_id"));
@@ -72,6 +77,35 @@ public class SurveyActivity extends ActionBarActivity {
         Log.i("Loc IDDDDDDDDd", Integer.toString(locationId));
 		
 		populate_spinners();
+		
+		rgIsBuying = (RadioGroup)findViewById(R.id.rdo3g);
+		rgIsBuying.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+			
+			@Override
+			public void onCheckedChanged(RadioGroup arg0, int id) {
+				switch(id){
+					case R.id.radio1:
+						spnPackage.setEnabled(true);
+						break;
+						
+					case R.id.radio0:
+						spnPackage.setEnabled(false);
+						break;
+				}
+			}
+		});
+		
+		spnMobileTypes.setOnItemSelectedListener(new OnItemSelectedListener() {			
+			public void onItemSelected(
+				AdapterView<?> parent, View view, int position, long id) {
+				
+				if( spnMobileTypes.getSelectedItem().toString().equals("Smart Phone") ){
+					spnMobileBrand.setEnabled(true);
+				} 	
+			}			
+			public void onNothingSelected(AdapterView<?> parent) {
+			}
+		});
 		
 		btnSubmit = (Button)findViewById(R.id.btnSubmit);
 		btnReset = (Button)findViewById(R.id.btnReset);
@@ -164,26 +198,35 @@ public class SurveyActivity extends ActionBarActivity {
 	 * 
 	 */
 	public void populate_spinners(){
-		List<String> occupations, packages, mobileBrands, mobileTypes, newPackages;
+		List<String> occupations, tempPackages, packages, tempMobileBrands;
+		List<String> mobileBrands, mobileTypes, monthlyInternetUsage;
 		ArrayAdapter<String> adapterOccupation, adapterPackage, adapterMobileBrand;
-		ArrayAdapter<String> adapterNewPackage, adapterMobileType;
-		
+		ArrayAdapter<String> adapterMobileType, adapterMonthlyInternetUsage;		
 		
 		dbUtil = new DatabaseUtil(SurveyActivity.this);
 		dbUtil.open();
 		
 		occupations = dbUtil.getSpinnerItems(ExperienceSQLiteOpenHelper.TABLE_OCCUPATIONS);
-		packages = dbUtil.getSpinnerItems(ExperienceSQLiteOpenHelper.TABLE_PACKAGES);
-		mobileBrands = dbUtil.getSpinnerItems(ExperienceSQLiteOpenHelper.TABLE_MOBILE_BRANDS);
+		tempPackages = dbUtil.getSpinnerItems(ExperienceSQLiteOpenHelper.TABLE_PACKAGES);
+		tempMobileBrands = dbUtil.getSpinnerItems(ExperienceSQLiteOpenHelper.TABLE_MOBILE_BRANDS);
 		dbUtil.close();
 		
 		mobileTypes = new ArrayList<String>();
 		mobileTypes.add("Regular Phone");
 		mobileTypes.add("Smart Phone");		
 		
+		monthlyInternetUsage = new ArrayList<String>();
+		monthlyInternetUsage.add("None");
+		monthlyInternetUsage.add("Below 50MB");        
+		monthlyInternetUsage.add("50MB to 200MB");   
+		monthlyInternetUsage.add("200MB to 500MB"); 
+		monthlyInternetUsage.add("500MB to 1GB");     
+		monthlyInternetUsage.add("1GB to 2GB");         
+		monthlyInternetUsage.add("3G & Above"); 
+		
 		spnOccupation = (Spinner)findViewById(R.id.spnOccupation);
-		spnPackage = (Spinner)findViewById(R.id.spnPackageTypes);
-		spnNewPackage = (Spinner)findViewById(R.id.spnNewPackage);
+		spnMonthlyInternetUsage = (Spinner)findViewById(R.id.spnMonthlyInternetUsage);
+		spnPackage = (Spinner)findViewById(R.id.spnPackage);
 		spnMobileBrand = (Spinner)findViewById(R.id.spnMobileBrand);
 		spnMobileTypes = (Spinner)findViewById(R.id.spnMobileType);
 		
@@ -191,26 +234,34 @@ public class SurveyActivity extends ActionBarActivity {
 		adapterOccupation.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnOccupation.setAdapter(adapterOccupation);
 		
+		adapterMonthlyInternetUsage = new ArrayAdapter<String>(SurveyActivity.this, android.R.layout.simple_spinner_item, monthlyInternetUsage);
+		adapterMonthlyInternetUsage.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spnMonthlyInternetUsage.setAdapter(adapterMonthlyInternetUsage);
+		
+		//New package should have the none option since user may not buy a package instantly
+		packages = new ArrayList<String>();
+		packages.add("None");
+		
+		for(String pckg: tempPackages){
+			packages.add(pckg);
+		}	
+		
+		mobileBrands = new ArrayList<String>();		
+		mobileBrands.add("None");
+		
+		for(String mbBrand: tempMobileBrands){
+			mobileBrands.add(mbBrand);
+		}
+		
 		adapterPackage = new ArrayAdapter<String>(SurveyActivity.this, android.R.layout.simple_spinner_item, packages);
 		adapterPackage.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnPackage.setAdapter(adapterPackage);
-		
-		//New package should have the none option since user may not buy a package instantly
-		newPackages = new ArrayList<String>();
-		newPackages.add("None");
-		
-		for(String pckg: packages){
-			newPackages.add(pckg);
-		}
-		
-		
-		adapterNewPackage = new ArrayAdapter<String>(SurveyActivity.this, android.R.layout.simple_spinner_item, newPackages);
-		adapterNewPackage.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		spnNewPackage.setAdapter(adapterNewPackage);
+		spnPackage.setEnabled(false);
 		
 		adapterMobileBrand = new ArrayAdapter<String>(SurveyActivity.this, android.R.layout.simple_spinner_item, mobileBrands);
 		adapterMobileBrand.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnMobileBrand.setAdapter(adapterMobileBrand);
+		spnMobileBrand.setEnabled(false);
 		
 		adapterMobileType = new ArrayAdapter<String>(SurveyActivity.this, android.R.layout.simple_spinner_item, mobileTypes);
 		adapterMobileType.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -273,8 +324,9 @@ public class SurveyActivity extends ActionBarActivity {
 			//making it empty otherwise it may cause problem in onPostExecute method
 			serverResponse = "";
 			
-			int occupation_id, package_id, new_package_id, mobile_brand_id;
+			int occupation_id, package_id, mobile_brand_id;
 			int is_smart_phone = 0;
+			String monthlyInternetUsage;
 			
 			if(((Spinner)findViewById(R.id.spnMobileType)).getSelectedItem().toString().equals("Smart Phone")){
 				is_smart_phone = 1;
@@ -286,11 +338,10 @@ public class SurveyActivity extends ActionBarActivity {
 			occupation_id = dbUtil.getId(ExperienceSQLiteOpenHelper.TABLE_OCCUPATIONS,
 					((Spinner)findViewById(R.id.spnOccupation)).getSelectedItem().toString());
 			
-			package_id = dbUtil.getId(ExperienceSQLiteOpenHelper.TABLE_PACKAGES,
-					((Spinner)findViewById(R.id.spnPackageTypes)).getSelectedItem().toString());
+			monthlyInternetUsage = ((Spinner)findViewById(R.id.spnMonthlyInternetUsage)).getSelectedItem().toString();
 			
-			new_package_id = dbUtil.getId(ExperienceSQLiteOpenHelper.TABLE_PACKAGES,
-					((Spinner)findViewById(R.id.spnNewPackage)).getSelectedItem().toString());
+			package_id = dbUtil.getId(ExperienceSQLiteOpenHelper.TABLE_PACKAGES,
+					((Spinner)findViewById(R.id.spnPackage)).getSelectedItem().toString());
 			
 			mobile_brand_id = dbUtil.getId(ExperienceSQLiteOpenHelper.TABLE_MOBILE_BRANDS,
 					((Spinner)findViewById(R.id.spnMobileBrand)).getSelectedItem().toString());
@@ -313,7 +364,7 @@ public class SurveyActivity extends ActionBarActivity {
 				reqEntry.addPart("occupation_id", new StringBody(Integer.toString(occupation_id)));
 				reqEntry.addPart("mobile_brand_id", new StringBody(Integer.toString(mobile_brand_id)));
 				reqEntry.addPart("package_id", new StringBody(Integer.toString(package_id)));
-				reqEntry.addPart("new_package_id", new StringBody(Integer.toString(new_package_id)));
+				reqEntry.addPart("monthly_internet_usage", new StringBody(monthlyInternetUsage));
 				reqEntry.addPart("is_smart_phone", new StringBody(Integer.toString(is_smart_phone)));
 				
 				if( is_three_g() ){
@@ -327,7 +378,14 @@ public class SurveyActivity extends ActionBarActivity {
 				}else{
 					reqEntry.addPart("is_female", new StringBody("0"));
 				}
-				reqEntry.addPart("date_time", new StringBody(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(Calendar.getInstance().getTime())));				
+				TimeZone tz = TimeZone.getTimeZone("UTC+06");
+				Calendar clndr = Calendar.getInstance(tz);
+				//change the timezone
+				//clndr.setTimeZone(TimeZone.getTimeZone("Asia/Dacca"));
+				
+				
+				reqEntry.addPart("date_time", new StringBody(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(clndr.getTime())));
+				//reqEntry.addPart("date_time", new StringBody(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(Calendar.getInstance().setTimeZone(TimeZone.)("Asia/Dhaka"))));
 					
 				httppost.setEntity(reqEntry);
 

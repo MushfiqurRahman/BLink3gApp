@@ -198,63 +198,24 @@
                 android:layout_gravity="left" >
 
                 <TextView
-                    android:id="@+id/tv3gPack"
+                    android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
-                    android:text="@string/sbcr_is_3g"
+                    android:text="@string/sbcr_recharge"
                     android:textColor="#FFFFFF"
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <RadioGroup
-                android:id="@+id/rdo3g"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" >
-
-                <RadioButton
-                    android:id="@+id/radio0"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:text="Yes"
-                    android:textColor="#FFFFFF"
-                    android:textStyle="bold" />
-
-                <RadioButton
-                    android:id="@+id/radio1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No"
-                    android:textColor="#FFFFFF"
-                    android:textStyle="bold" />
-            </RadioGroup>
-
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left" >
-
-                <TextView
-                    android:id="@+id/tvPackageType"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:text="@string/sbcr_package_type"
-                    android:textColor="#FFFFFF"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <Spinner
-                android:id="@+id/spnPackageTypes"
+            <EditText
+                android:id="@+id/edtRecharge"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
                 android:background="#FFFFFF"
-                android:padding="5dp"
-                android:spinnerMode="dropdown"
-                android:textSize="30sp" />
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="25sp" />
 
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -262,42 +223,17 @@
                 android:layout_gravity="left" >
 
                 <TextView
-                    android:id="@+id/tvNewPackage"
+                    android:id="@+id/tvMonthlyInternetUsage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
-                    android:text="@string/sbcr_new_package"
+                    android:text="@string/sbcr_monthly_internet_usage"
                     android:textColor="#FFFFFF"
                     android:textStyle="bold" />
             </LinearLayout>
 
             <Spinner
-                android:id="@+id/spnNewPackage"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_marginBottom="15dp"
-                android:background="#FFFFFF"
-                android:padding="5dp"
-                android:spinnerMode="dropdown"
-                android:textSize="30sp" />
-
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left" >
-
-                <TextView
-                    android:id="@+id/tvMobileBrand"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:text="@string/sbcr_mobile_brand"
-                    android:textColor="#FFFFFF"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <Spinner
-                android:id="@+id/spnMobileBrand"
+                android:id="@+id/spnMonthlyInternetUsage"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginBottom="15dp"
@@ -337,24 +273,88 @@
                 android:layout_gravity="left" >
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/tvMobileBrand"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
-                    android:text="@string/sbcr_recharge"
+                    android:text="@string/sbcr_mobile_brand"
                     android:textColor="#FFFFFF"
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <EditText
-                android:id="@+id/edtRecharge"
+            <Spinner
+                android:id="@+id/spnMobileBrand"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="45dp"
                 android:layout_marginBottom="15dp"
                 android:background="#FFFFFF"
-                android:ems="10"
-                android:inputType="number"
-                android:textSize="25sp" />
+                android:padding="5dp"
+                android:spinnerMode="dropdown"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left" >
+
+                <TextView
+                    android:id="@+id/tv3gPack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/buying_3g"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rdo3g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="No"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left" >
+
+                <TextView
+                    android:id="@+id/tvPackage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/sbcr_package"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spnPackage"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="15dp"
+                android:background="#FFFFFF"
+                android:padding="5dp"
+                android:spinnerMode="dropdown"
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/btnSubmit"

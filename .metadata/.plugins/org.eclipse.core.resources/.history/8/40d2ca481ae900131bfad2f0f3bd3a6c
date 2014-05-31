@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">3gExperience</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_survey">User Experience</string>
+    <string name="bp_code">BP Code</string>
+    <string name="area">Area</string>
+    <string name="location">Location</string>
+    <string name="login">Login</string>
+    <string name="survey_heading">User Experience</string>
+    <string name="sbcr_name">Subscriber Name</string>
+    <string name="sbcr_occupation">Occupation</string>
+    <string name="sbcr_age">Age</string>
+    <string name="sbcr_gender">Gender</string>
+    <string name="sbcr_mobile">Mobile Number</string>
+    <string name="buying_3g">Buying 3G Pack</string>
+    <string name="sbcr_package_type">Current Package</string>
+    <string name="sbcr_mobile_brand">Mobile Brand</string>
+    <string name="sbcr_recharge">Monthly Recharge</string>
+    <string name="submit">Submit</string>
+    <string name="reset">Reset</string>
+    <string name="action_db_sync">Sync Database</string>
+    <string name="logout">Logout</string>
+    <string name="sbcr_mobile_Type">Mobile Type</string>
+    <string name="sbcr_package">New Package</string>
+    <string name="sbcr_monthly_internet_usage">Monthly Internet Usage</string>
+    
+</resources>

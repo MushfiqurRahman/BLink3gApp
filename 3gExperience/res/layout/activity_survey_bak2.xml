@@ -197,7 +197,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
-                android:text="@string/sbcr_is_3g"
+                android:text="@string/buying_3g"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -236,7 +236,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
-                android:text="@string/sbcr_package_type"
+                android:text="@string/sbcr_monthly_internet_usage"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold" />
         </LinearLayout>
