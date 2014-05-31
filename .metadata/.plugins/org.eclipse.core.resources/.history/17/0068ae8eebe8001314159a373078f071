@@ -223,7 +223,7 @@ public class DatabaseUtil {
 			//now finding the area ids from team id
 			Cursor curFindAreaIds = database.rawQuery("SELECT "+ExperienceSQLiteOpenHelper.LOCATION_AREA_ID+
 					" FROM "+ExperienceSQLiteOpenHelper.TABLE_LOCATIONS+
-					" WHERE "+ExperienceSQLiteOpenHelper.LOCATION_TEAM_ID+
+					" WHERE "+ExperienceSQLiteOpenHelper.AREA_ID+
 					"="+teamId+"", null);
 			curFindAreaIds.moveToFirst();
 			if( curFindAreaIds.getCount()>0 ){
